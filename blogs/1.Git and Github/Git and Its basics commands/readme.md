@@ -96,3 +96,168 @@ Here are the "Big Five" commands you will use 90% of the time:
 # The basic GIT Workflow
 
 ![Screenshot](./git-workflow.png)
+
+## The most used commands every day using git
+
+- git status:it gives information on the current status of git repo and it's content. it must be first command to check whether **you are in git repo or not** and before add and commit you want to see what are files which are untracked, add or staged. These all Info is given by `git status`
+  if you try on first then it say **fatal: not a git repository
+  (or any of the parent directories)**
+
+our actual first command is git init
+
+- `git init`: it is used to create new git repository.This is something you do once per projects. Initialize on top folder containing your projects
+  **git tracks all directory and nested sub directories**
+
+  ![commands photo](./git-basics-commands.png)
+
+- git add <file-name> : it add files for next commits (called staging area).for multiple files to add used `git add file1 file2`
+- git add . :stage all changes at once
+
+## committing
+
+it is most important part where git looks into staging area nad store permanently into repository
+
+- git commit -m"add some file"
+- git commit -a -m "bug fix in main" : it is single command to stage and commit .
+  **Note**: **always check status of file to add and commit, `git status`is your friend**
+
+# Branching
+
+- it is essential part of git.
+- it is like alternate timeline of project.
+- it enables us to create new context where we can try new things, works in multiple ideas in parallel
+- it does not effect into main branch unless we merge it .
+  [branching link](https://app.eraser.io/workspace/2tdTy9Hd2uQwgkLZNXW4?elements=Lds8VphqwwFjcDv3eGHNJg)
+
+**You probably have seen , On master branch , nothing to commit**
+
+## Master branch
+
+in git you always work in branch, default branch named "master"
+
+Info: In 2020 , github renamed default branch from master to main
+
+common workflow like, working on master -> ->merge it
+-> experimental branch
+
+## what is master<-HEAD
+
+it is pointer pointed to current location in your repository. it stores current branch references. it changes when branch change , means we can change HEAD position.
+[Head figure](https://app.eraser.io/workspace/2tdTy9Hd2uQwgkLZNXW4?elements=8x15cVQ8IXHXWMNE_mBT5Q)
+
+HEAD toggle between branches . when we make another branch darkMode then it point to darkMode. write some codes and commit then it point to latest commit . we can switch to master then HEAD point to latest commit of master . when we merge darkMode to master then it point to merge commit in master branch .
+
+- `git branch` : show lists of all branches
+
+## create branch
+
+- `git branch <branch-name>`
+
+## switch between branch
+
+- `git switch <branch-name>`
+
+## create branch and switch in one go
+
+- `git branch -c <branch-name>`
+
+## old command to create and switch branch
+
+- `git checkout <branch-name>`: switch branch
+- `git checkout -b <branch-name>`: create and witch branch (old command) but still used.
+
+## delete and rename branch
+
+-`git branch -d <branch-name>` : delete branch
+
+- `git branch -D <branch-name>` : delete with --force means it deleted even if any error of merge shows.
+
+- `git branch -m <new-branch-name>`: rename branch
+  Note : we have to switch in other branch beside branch to be deleted but for rename we have to switch into branch that need to rename
+
+- git branch -v : view more info of branch
+
+# Merging
+
+Branching makes easy to work in self contained context but often we need to incorporate one branch into another which is merging branch
+
+## merging in simple way
+
+suppose we work in bugFix branch and it's okay and we need to merge it into master then two steps to followed:
+
+- git switch master
+- git merge bugFix
+
+## 3 merges
+
+- Fast-Forward
+- merge with message(no-conflict)
+- merge with conflict(resolve first then merge)
+
+1. [fast-forward-merge](https://app.eraser.io/workspace/2tdTy9Hd2uQwgkLZNXW4?elements=rmF7RqxTtNdW-yGWH20Liw)
+
+Not all merges are fast-forward merge
+this happens all time, suppose one of our teammate merge new feature or change master while working on branch.
+[not-fast-forward](https://app.eraser.io/workspace/2tdTy9Hd2uQwgkLZNXW4?elements=-K2lvhdRr-iKRMGhuuExig)
+
+when we try to merge then git performs "merge commit" and open our default code editor to write merge commit message.
+
+2. merge with commits message: [figure-reference](https://app.eraser.io/workspace/2tdTy9Hd2uQwgkLZNXW4?elements=XzPXc17MKZuYJQHWgm5axg)
+
+Depending upon the specific changes you are trying to merge . git can not automatically merge . if conflict arise you have to manually resolve and then commit.
+suppose the same file you edit in master branch and same file you change into features branch then when you try to merge then git shows conflict error like this :
+
+```
+CONFLICT (content): Merge conflict in blah.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+```
+
+```
+<<<<<<< HEAD
+I have 2 cats
+I also have chickens
+=======
+I used to have a dog :(
+>>>>>>> bug-fix
+```
+
+## Conflict markers
+
+The content from your current HEAD (the branch you
+are trying to merge content into) is displayed
+between the <<<<<<< HEAD and ======
+
+and The content from the branch you are trying to merge
+from is displayed between the ======= and
+
+> > > > > > > symbol.
+> > > > > > > then you have to manually resolve conflict and add and commit to the branch
+
+# GIT DIFF
+
+it is informative command which show difference between two branch, commits, staged and unstaged changes of files
+
+- git diff :compare between latest commit and all unstaged changes
+- git diff HEAD : show all changes between latest HEAD and staged or unstaged files
+- git diff --staged : show all staged changes from last commit.
+- git diff branch1..branch2 : show the changes between two branch
+- git diff commit1..commit2 : show the changes of two commits
+
+## narrowing diff
+
+- git diff HEAD [filename]
+- git diff --staged [filename]
+
+
+# GIT Stash
+it is command that store the working directory and staging area before switching branch without commit. when we try to switch branch without commit , git do 2 things:1. bring that changes into detination branch 2. show error and tell to commit first . so in that situation `git stash ` is useful
+
+- git stash : save all the unstaged and staged changes 
+- git stash pop: pop the stash 
+- git stash apply : it apply stash but donot remove the stash .
+## working with multiple stash
+- git stash list : show list of stash.
+- git stash apply <stash -id> : apply stash of particular id.
+- git stash drop <stash-id>: drop the particular stash 
+- git stash clear : clear list of stash
