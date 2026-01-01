@@ -71,4 +71,4 @@ If you’re still naming folders final_v2, it’s time to put down the pendrive 
 
 ### Resources
 
-- BLOG URL : [https://dipeshchaudhary.hashnode.dev/importance-of-vcs-git-in-modern-software-development]
+- BLOG URL : (https://dipeshchaudhary.hashnode.dev/importance-of-vcs-git-in-modern-software-development)

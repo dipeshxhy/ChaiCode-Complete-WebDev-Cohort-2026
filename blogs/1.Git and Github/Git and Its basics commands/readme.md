@@ -1,5 +1,6 @@
 # What is GIT ?
 
+Git is very poular and widely used over many like preforce, mercurial , subversion etc
 git is Distributed Version Control System (DVCS) meaning:
 
 - Version Control: keep track of every changes in files over time.
@@ -67,27 +68,31 @@ Here are the "Big Five" commands you will use 90% of the time:
 **git revert <commit-hash>**: to revert the changes in the commit means remove the insertion and add the deletion in new commit.
 **git reset --hard <commit-hash>**: to reset the HEAD to specific commit
 
-
 # Git CheatSheet
-| Command | Description |
-| ------- | ----------- |
-| `git init` | Initialize a new Git repository |
-| `git clone <url>` | Clone a repository from a URL |
-| `git status` | Show the status of the working directory |
-| `git add <file>` | Stage a file for commit |
-| `git add .` | Stage all changes in the current directory |
-| `git commit -m "message"` | Commit staged changes with a message |
-| `git push` | Push commits to a remote repository |
-| `git pull` | Fetch and merge changes from a remote repo |
-| `git branch` | List branches |
-| `git branch <name>` | Create a new branch |
-| `git checkout <branch>` | Switch to a specific branch |
-| `git merge <branch>` | Merge a branch into the current branch |
-| `git log` | View commit history |
-| `git diff` | Show differences between working files |
-| `git reset <file>` | Unstage a file |
-| `git stash` | Save changes without committing |
-| `git stash pop` | Reapply stashed changes |
-| `git fetch` | Download objects and refs from another repo |
-| `git remote add <name> <url>` | Add a remote repository |
-| `git rebase <branch>` | Reapply commits on top of another branch |
+
+| Command                       | Description                                 |
+| ----------------------------- | ------------------------------------------- |
+| `git init`                    | Initialize a new Git repository             |
+| `git clone <url>`             | Clone a repository from a URL               |
+| `git status`                  | Show the status of the working directory    |
+| `git add <file>`              | Stage a file for commit                     |
+| `git add .`                   | Stage all changes in the current directory  |
+| `git commit -m "message"`     | Commit staged changes with a message        |
+| `git push`                    | Push commits to a remote repository         |
+| `git pull`                    | Fetch and merge changes from a remote repo  |
+| `git branch`                  | List branches                               |
+| `git branch <name>`           | Create a new branch                         |
+| `git checkout <branch>`       | Switch to a specific branch                 |
+| `git merge <branch>`          | Merge a branch into the current branch      |
+| `git log`                     | View commit history                         |
+| `git diff`                    | Show differences between working files      |
+| `git reset <file>`            | Unstage a file                              |
+| `git stash`                   | Save changes without committing             |
+| `git stash pop`               | Reapply stashed changes                     |
+| `git fetch`                   | Download objects and refs from another repo |
+| `git remote add <name> <url>` | Add a remote repository                     |
+| `git rebase <branch>`         | Reapply commits on top of another branch    |
+
+# The basic GIT Workflow
+
+![Screenshot](./git-workflow.png)
