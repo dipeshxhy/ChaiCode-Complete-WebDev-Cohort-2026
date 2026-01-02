@@ -1,6 +1,6 @@
 # What is GIT ?
 
-Git is very poular and widely used over many like preforce, mercurial , subversion etc
+Git is very popular and widely used over many like preforce, mercurial , subversion etc
 git is Distributed Version Control System (DVCS) meaning:
 
 - Version Control: keep track of every changes in files over time.
@@ -175,7 +175,7 @@ HEAD toggle between branches . when we make another branch darkMode then it poin
 - `git branch -m <new-branch-name>`: rename branch
   Note : we have to switch in other branch beside branch to be deleted but for rename we have to switch into branch that need to rename
 
-- git branch -v : view more info of branch
+- `git branch -v `: view more info of branch
 
 # Merging
 
@@ -249,15 +249,66 @@ it is informative command which show difference between two branch, commits, sta
 - git diff HEAD [filename]
 - git diff --staged [filename]
 
-
 # GIT Stash
+
 it is command that store the working directory and staging area before switching branch without commit. when we try to switch branch without commit , git do 2 things:1. bring that changes into detination branch 2. show error and tell to commit first . so in that situation `git stash ` is useful
 
-- git stash : save all the unstaged and staged changes 
-- git stash pop: pop the stash 
+- git stash : save all the unstaged and staged changes
+- git stash pop: pop the stash
 - git stash apply : it apply stash but donot remove the stash .
+
 ## working with multiple stash
+
 - git stash list : show list of stash.
 - git stash apply <stash -id> : apply stash of particular id.
-- git stash drop <stash-id>: drop the particular stash 
+- git stash drop <stash-id>: drop the particular stash
 - git stash clear : clear list of stash
+
+# Undoing Stuff and Time Travelling
+
+## Detached HEAD
+
+usually HEAD points to specific branch which has reference of its latest commit . but we can move back to any commit by using `git checkout <commit-hash>`.and we can edit , create branch do many things. and again for attach HEAD , we use `git switch <branch-name>` or `git switch -`
+
+- git checkout HEAD~1 : 1 commit back from HEAD
+- git checkout HEAD~2: 2 commit back from HEAD
+
+# Discarding Changes
+
+suppose you add various changes in file and you donot want to keep it and you want to discard change and want last commit changes
+
+- git checkout HEAD <filename>
+- git checkout -- <filename>
+
+there is new command to do this works:
+
+- git restore <filename>
+- git restore --source HEAD~1 <filename> : restore the content
+
+# unstage the staging area
+
+- git restore --staged <filename>
+
+# reset
+
+- git reset <commit-hash> : it reset head and keep changes in working directory
+- git reset --hard <commit-hash>: it reset head and donot keep changes / delete commit
+
+# revert
+
+- git revert <commit-hash>: it revert the changes but create new commit
+
+# Both git reset and git revert reverse the changes , which one should use?
+
+Both git reset and git revert help us reverse changes, but there is
+a significant difference when it comes to collaboration.
+
+If you want to reverse some commits that other people already
+have on their machines, you should use revert.
+
+If you want to reverse commits that you haven't shared with
+others, use reset and no one will ever know!
+
+# Resources
+
+[Blog-link](https://dipeshchaudhary.hashnode.dev/all-about-git-and-its-commands)
