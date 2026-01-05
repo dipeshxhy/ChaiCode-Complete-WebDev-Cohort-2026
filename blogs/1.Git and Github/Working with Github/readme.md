@@ -104,3 +104,74 @@ so the workflows be like :
 - Can result in merge conflicts
 - Not recommended if you have
   uncommitted changes
+
+# Rebasing vs Merging
+
+## Rebasing
+
+There are two main ways to
+use the git rebase command:
+
+- as an alternative to merging
+- as a cleanup too
+
+I work on collaborative project. I work on features branch . I do 2 commits in master branch . and my team-mate does some commit in master branch . I do not have that changes in my features branch so I need to merge master branch and it generates merge commits message like "Merge master to features branch". like this when some new commits done in master branch I need to get that changes by merging master branch which produce more and more merge commit message which pollutes branch so for clean and linear history we do rebase .
+
+- git switch features
+- git rebase master
+
+We can instead rebase the feature branch
+onto the master branch. This moves the
+entire feature branch so that it BEGINS at
+the tip of the master branch. All of the work
+is still there, but we have re-written history.
+
+Instead of using a merge commit, rebasing
+rewrites history by creating new commits for
+each of the original feature branch commits.
+
+## Why Rebase?
+
+We get a much cleaner project
+history. No unnecessary merge
+commits! We end up with a linear
+project history
+
+## Golden rules for when to do Rebasing
+
+Never rebase commits that have been shared with
+others. If you have already pushed commits up to
+Github...DO NOT rebase them unless you are positive
+no one on the team is using those commits.
+
+**NOTE**: only rebase the commits which is not push in github , which code is not shared in github . The code or branch in which your are only working then only rebase it .
+
+- never rebase master branch
+- if you want to rebase then the branch which you are only working .rebase first then only push into github .
+  Because rebase write new commit history. and when the code is shared with other and you rebase and push to github . it is pain to reconcile the alternate histories .
+
+## Interactive Rebase
+
+Running git rebase with the -i option will enter the
+interactive mode, which allows us to edit commits, add
+files, drop commits, etc. Note that we need to specify how
+far back we want to rewrite commits.
+
+- git rebase -i HEAD~5
+
+Also, notice that we are not rebasing onto another branch.  
+Instead, we are rebasing a series of commits onto the
+HEAD they currently are based on.
+
+## What's now ?
+
+In our text editor, we'll see a list of commits alongside a list
+of commands that we can choose from. Here are a couple
+of the more commonly used commands:
+
+- pick - use the commit
+- reword - use the commit, but edit the commit message
+- edit - use commit, but stop for amending
+- fixup - use commit contents but meld it into previous
+  commit and discard the commit message
+- drop - remove commit
