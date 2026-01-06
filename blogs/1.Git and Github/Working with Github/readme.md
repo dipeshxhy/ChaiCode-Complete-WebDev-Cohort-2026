@@ -175,3 +175,94 @@ of the more commonly used commands:
 - fixup - use commit contents but meld it into previous
   commit and discard the commit message
 - drop - remove commit
+
+# GIT Tag
+
+Tags are pointer in particular points in git history . people often used tags to give information about versions and releases of projects
+
+# Sematic Versioning
+
+it is specs about standardized the versioning of software release . it gives information about releases about the software. it includes three parts:
+
+- when project initialize , the version start with 1.0.0
+
+1. Patch release: the last number includes patch release like 1.0.1, 1.0.2 . it increase by one when patch need to release. it is simple bugfix or some comments . it does not impact the how code is used.
+2. Minor release : the middle number includes minor release. it is some additional functionality includes. it is backward compatible.when minor release, patch is reset to 0.
+   like : 1.2.0, 1.3.0
+3. Major release: it is major release of projects
+
+- it includes breaking change in project
+- it is not backward compatible.
+- there is remove or deletion of some functionality.
+  when there is major release, minor and patch reset to 0
+  like: 2.0.0, 3.0.0, 10.0.0
+
+## Viewing and searching tags
+
+- git tag : it shows all tags .
+- git tag -l "_Beta_" : it shows only tag which is filter like "v17\*"
+
+## Types of Tags
+
+1. lightweight tag : it is tag with simple name
+
+- git tag <tagname> : to create it
+
+2. annotated tag it contains more meta data about tag . it contains information about author, date, message.
+
+- git tag -a <tagname>: to create annotated tag.
+
+## Get more info of tag
+
+- git show <tagname>
+
+## comparing tags with Git diff
+
+- git diff v17.0.1 v17.0.2
+
+## Tagging previous Commits
+
+- git tag <tagname> <commit-hash>
+
+## Forcing tags
+
+- git tag -f <tagname> <commit-hash>
+
+## checkout tag
+
+- git checkout <tagname>
+
+## deleting tag
+
+- git tag -d <tagname>
+
+## pushing tags
+
+tags are not automatically push in github . we have to do one by one or all at once.
+
+- git push <tagname> : one tag
+- git push --tags : all tags at once .
+
+# Collaboration Topics
+
+## add collaborators
+
+- go to setting of repo and there is collaborators option .
+
+## protect branch by defining rules sets
+
+- protect branch from anyone merge into master branch . go to setting and click on rules sets
+
+## Always works on feature branch
+
+- works on feature branch
+- this helps to make master branch clean and prevent from broken code push into master branch
+
+## Always add into master branch by Pull Request
+
+- create PR to merge any branch into master branch .
+
+## Forking and Cloning
+
+- copying any public repo into your github account
+- then you can do anything into that project, change as you want in fork repo, push change delete code , anything
