@@ -1,3 +1,7 @@
+# Resources
+
+- [blog link](https://dipeshchaudhary.hashnode.dev/dive-into-github)
+
 # What is Github
 
 it is hosted platform for git repository.
