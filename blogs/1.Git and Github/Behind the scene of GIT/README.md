@@ -50,7 +50,7 @@ so they won't look like much
 - commit
 - blobs
 - tree
-- anotated tags
+- annotated tags
 
 ## Hashing function:
 
