@@ -107,3 +107,7 @@ Internet is networks of network .
 - your ISP : big network
 - Countries have giant network
 - All are connected with high speed cables and network
+
+### Resource:
+
+[Blog URL](https://dipeshchaudhary.hashnode.dev/networking-and-internet?showSharer=true)
