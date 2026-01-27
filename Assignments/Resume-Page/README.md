@@ -18,6 +18,7 @@ I enjoy learning how the internet, networking, and software systems work behind 
 
 You can view or download my resume here:
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://dipeshchaudharyresume.vercel.app/)
 👉 **[View Resume PDF](./Dipesh_chaudhary_resume.pdf)**
 
 ## 🛠️ Skills
