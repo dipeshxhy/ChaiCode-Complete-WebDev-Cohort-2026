@@ -3,142 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./profile.jpg" type="image/x-icon">
-    <title>Portfolio | Dipesh Chaudhary</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dipesh | Full Stack Developer</title>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- NAV -->
-    <nav class="main-nav">
-      <div class="profile-container">
-        <img class="profile" src="./me.jpg" alt="my profile image"  />
-      </div>
-      <div class="nav-link__container">
-        <ul class="nav-list">
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-            <li>
-              <a class="btn" href="#contact">Let's Connect</a>
-            </li>
-          </ul>
-      </div>
+    <header class="navbar">
+      <div class="nav-left logo">Dipesh</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="https://blogs.dipeshchaudhary.name.np">Blogs</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn-nav">Let's Connect</a>
       </nav>
+    </header>
 
-    <main>
-      <!-- Hero section -->
-      <section>
-        <div>
-          <h1>Full Stack Developer | Tech Enthusiast</h1>
-          <button>Contact Me</button>
-          <!-- social media links -->
-          <div>
-            <a href="https://linkedin.com/in/dipeshchy">LinkedIn</a>
-            <a href="https://github.com/dipeshxhy">GitHub</a>
-            <a href="https://twitter.com/dipesschaudhary">Twitter</a>
+    <main class="container">
+      <!-- HERO -->
+      <section class="hero" id="about">
+        <div class="hero-text">
+          <p class="tag">Tech Enthusiast</p>
+          <h1>Full Stack <span>Developer</span></h1>
+          <p>I build fast, modern and scalable web applications.</p>
+          <div class="socials margin-top__md">
+            <a href="https://github.com/dipeshxhy"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/dipeshchy/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/dipesschaudhary"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+
+          <div class="hero-btns">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a
+              class="btn secondary"
+              href="./Dipesh_chaudhary_resume.pdf"
+              download
+              >Download CV</a
+            >
           </div>
         </div>
-        <!-- profile image -->
-        <img src="./profile.jpg" alt="my profile image" width="200" />
+
+        <img src="./20230217_204021.jpg" class="hero-img" />
       </section>
 
-      <!-- About me section -->
-       <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I love coding and building the software that brings real value in life . I always try to solve problems through my code. I can spend my whole day and night on coding because I love it. I have <strong>3+</strong> years of experience working with both frontend and backend technologies, and I enjoy creating seamless user experiences. When I'm not coding, I like to read tech blogs and stay updated with the latest industry trends.
-        </p>
-       </section>
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>Skills</h2>
 
-       <!-- Skills section -->
-        <section id="skills">
-          <h2>Skills</h2>
-          <div>
-            <h3>Frontend </h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React</li>
-          </div>
-          <div>
-            <h3>Backend </h3>
-            <ul>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>MongoDB</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Other Skills </h3>
-            <ul>
-              <li>Git & GitHub</li>
-              <li>RESTful APIs</li>
-              <li>Problem Solving</li>
-              <li>Agile Methodologies</li>
-            </ul>
-          </div>
-        </section>
-        <!-- Portfolio section -->
-        <section id="portfolio">
-          <h2>Portfolio</h2>
-          <div>
-            <h3>Project 1: E-commerce Website</h3>
-            <p>
-              Developed a full-featured e-commerce website using React for the frontend and Node.js with Express for the backend. Implemented user authentication, product management, and payment integration.
-            </p>
-            <div>
-              <button>View Project</button>
-              <button>Source Code</button>
-            </div>
-          </div>
-          <div>
-            <h3>Project 2: Social Media App</h3>
-            <p>
-              Created a social media application that allows users to create profiles, post updates, and connect with friends. Utilized MongoDB for data storage and implemented real-time notifications using WebSockets.
-            </p>
-            <div>
-              <button>View Project</button>
-              <button>Source Code</button>
-              </div>  
+        <div class="skills-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">React</div>
+          <div class="skill-card">Node.js</div>
+          <div class="skill-card">MongoDB</div>
+          <div class="skill-card">Git</div>
+          <div class="skill-card">REST APIs</div>
+        </div>
+      </section>
 
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <img
+              src="./screencapture-movie-dipeshchaudhary-name-np-2026-01-28-16_48_38.png"
+              alt="Movie App"
+            />
+
+            <h3>Movie Explorer App 🎬</h3>
+            <p>
+              React app that fetches real-time movies from TMDB API. Includes
+              search, trending movies and movie details page.
+            </p>
+
+            <p class="tech">React • TMDB API • CSS</p>
+
+            <div class="project-links">
+              <a href="https://movie.dipeshchaudhary.name.np" target="_blank"
+                >Live</a
+              >
+              <a href="https://github.com/dipeshxhy/" target="_blank">Code</a>
+            </div>
           </div>
-        </section>
-        <!-- Contact section -->
-         <section id="contact">
-          <h2>Contact Me</h2>
-          <form>
-            <div>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div>
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="5" cols="20" required placeholder="write your message..."></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-          </form>
-         </section>
-         
-        </main>
-        <!-- Footer -->
-        <footer>
-          <button>&uparrow;</button>
-          <p>&copy; 2026 Dipesh Chaudhary. All rights reserved.</p>
-        </footer>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message"></textarea>
+          <button>Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>© 2026 Dipesh Chaudhary. All rights reserved.</footer>
   </body>
 </html>
