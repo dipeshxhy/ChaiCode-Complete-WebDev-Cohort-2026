@@ -3,6 +3,16 @@
 Welcome to my resume repository!  
 This repo contains the latest version of my resume along with supporting files and project links.
 
+### Here is Resume Image
+
+![Resume Image](./resume-scrrenshot.png)
+
+### Steps Followed While building Resume in HTML
+
+- used semantic tags like header, main, section, aside, footer on it
+- given link to download resume pdf .
+- added live link of project
+
 ## 👨‍💻 About Me
 
 I am a passionate learner and aspiring software developer with interests in:
