@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #333;
+        color: #fff;
+      }
+      .active {
+        border-top: 4px solid #ff6f61;
+      }
+
+      .accordion {
+        width: 60%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .accordion-item {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        justify-items: center;
+        padding: 20px;
+        gap: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .active .accordion-details {
+        display: block;
+      }
+      .accordion-details {
+        grid-column: 2;
+        display: none;
+      }
+      .icon {
+        font-size: 24px;
+        justify-self: center;
+        cursor: pointer;
+      }
+      .number {
+        font-size: 24px;
+        font-weight: 600;
+        justify-self: center;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+        justify-self: start;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+      .lists {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style-position: inside;
+        list-style-type: square;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="accordion-item">
+        <p class="number">01</p>
+        <p class="title">Where are these Chairs assembled ?</p>
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+        <div class="accordion-details">
+          <p class="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+            beatae quas quo cumque quisquam aut autem? Tempore animi in
+            suscipit, asperiores, dolorum rem optio enim quia explicabo sed id?
+            Aliquam.
+          </p>
+          <ul class="lists">
+            <li class="list-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, reiciendis.
+            </li>
+            <li class="list-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit!
+            </li>
+            <li class="list-item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item active">
+        <p class="number">02</p>
+        <p class="title">How long do I have to return chair ?</p>
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+        <div class="accordion-details">
+          <p class="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+            beatae quas quo cumque quisquam aut autem? Tempore animi in
+            suscipit, asperiores, dolorum rem optio enim quia explicabo sed id?
+            Aliquam.
+          </p>
+          <ul class="lists">
+            <li class="list-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, reiciendis.
+            </li>
+            <li class="list-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit!
+            </li>
+            <li class="list-item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <p class="number">03</p>
+        <p class="title">Do you ship the countries outside the EU ?</p>
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+        <div class="accordion-details">
+          <p class="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+            beatae quas quo cumque quisquam aut autem? Tempore animi in
+            suscipit, asperiores, dolorum rem optio enim quia explicabo sed id?
+            Aliquam.
+          </p>
+          <ul class="lists">
+            <li class="list-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, reiciendis.
+            </li>
+            <li class="list-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit!
+            </li>
+            <li class="list-item">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
