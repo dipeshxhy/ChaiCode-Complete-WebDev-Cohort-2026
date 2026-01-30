@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+      .pagination {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+      .btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #4caf50;
+        color: #4caf50;
+        cursor: pointer;
+      }
+      .btn-icon {
+        width: 24px;
+        height: 24px;
+      }
+      .numbers button {
+        margin-right: 20px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 18px;
+      }
+      button:hover {
+        background-color: #4caf50;
+        border-radius: 50%;
+        color: white;
+      }
+      button.active-dot {
+        border-radius: 50%;
+
+        background-color: #4caf50;
+        color: white;
+      }
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+      a:hover,
+      a:active {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <span>...</span>
+      <a href="#">7</a>
+      <!-- <div class="numbers">
+        <button>1</button>
+        <button>2</button>
+        <button class="active-dot">3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <span>...</span>
+        <button>23</button>
+      </div> -->
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
