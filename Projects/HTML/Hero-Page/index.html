@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourCook | Hero</title>
+    <!-- Rubik Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Rubik', sans-serif;
+      }
+      body {
+        color: #333;
+      }
+      .container {
+        width: 1150px;
+        margin: 0 auto;
+      }
+      header {
+        position: relative;
+        min-height: 100vh;
+        /* background-color: magenta; */
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(./hero.jpg);
+        background-size: cover;
+        /* background-position: center; */
+        color: #fff;
+      }
+      nav {
+        font-size: 24px;
+        font-weight: 700;
+        padding-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header-container {
+        width: 1150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .header-container-inner {
+        width: 50%;
+      }
+      h1 {
+        font-size: 52px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: white;
+        background-color: #e67e22;
+        text-transform: capitalize;
+        border-radius: 8px;
+        transition: background-color 0.3s;
+      }
+      .btn:hover,
+      .btn:active {
+        background-color: #cf711f;
+      }
+      section {
+        padding: 86px 0;
+        background-color: #f7f7f7;
+      }
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healthy meal delivered to your door, every day</h1>
+          <p>
+            The smart 365-days-a-year food subscription that will make you eat
+            healthy again. Tailored to your personal tastes and nutritional
+            needs.
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Some Random Heading</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quia
+          debitis quidem illum, sint temporibus nostrum, praesentium quod eius
+          culpa, impedit deserunt. Praesentium nulla, facere expedita quo
+          deleniti quia ea?Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Repudiandae impedit unde perferendis quibusdam perspiciatis
+          praesentium rem molestiae, dignissimos tempora nemo quasi mollitia
+          placeat fuga dolorum magnam? Doloribus iusto illo nisi?
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
