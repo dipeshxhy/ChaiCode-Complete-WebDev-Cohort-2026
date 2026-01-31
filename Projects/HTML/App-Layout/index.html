@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 80px 280px 1fr 200px;
+        grid-template-rows: 60px 1fr;
+      }
+      nav,
+      section,
+      main,
+      aside {
+        padding: 20px;
+        font-size: 22px;
+      }
+      nav {
+        background-color: #343a40;
+        color: #fff;
+        grid-column: 1;
+        grid-row: 1/-1;
+      }
+      menu {
+        background-color: #7048e8;
+        grid-column: 2/-1;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 48px;
+      }
+      button {
+        display: inline-block;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 8px 12px;
+        background-color: #5f3dc4;
+        color: #fff;
+      }
+      .trash {
+        margin-left: auto;
+        background-color: #e03131;
+      }
+      section {
+        background-color: #1971c2;
+        padding: 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        overflow: scroll;
+      }
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #343a40;
+        border-radius: 4px;
+      }
+
+      main {
+        background-color: #12b886;
+        grid-column: 3;
+        grid-row: 2/-1;
+      }
+      aside {
+        background-color: #fcc419;
+        grid-column: 4;
+        grid-row: 2/-1;
+      }
+      .email {
+        background-color: #e9ecef;
+        color: #343a40;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>NAV</nav>
+    <menu>
+      <button>Read</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark unread</button>
+      <button class="trash">trash</button>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
+    <main>Main</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
