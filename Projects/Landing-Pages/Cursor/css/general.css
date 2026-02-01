@@ -1,0 +1,79 @@
+:root {
+  --color-accent: #14120b;
+
+  --primary-text-color: #edecec;
+  --bg-button-white: #d7d6d5;
+  --color-gray: #b6b5b3;
+  /*  #EDECEC */
+  --font-size-small: 1.4rem;
+  --font-size-base: 1.6rem;
+
+  --fw-regular: 400;
+  --fw-md: 600;
+  --fw-bold: 700;
+
+  --spacing-sm: 0.8rem;
+  --spacing-md: 2rem;
+}
+@font-face {
+  font-family: 'cursorRegular';
+  src:
+    url(../fonts/f30fd2e485acf1bc-s.p.3d1b066d.woff2) format('woff2'),
+    url(../fonts/f30fd2e485acf1bc-s.p.3d1b066d.woff) format('woff');
+}
+@font-face {
+  font-family: 'cursorBold';
+  src:
+    url(../fonts/CursorGothic_Bold-s.p.95169710.woff2) format('woff2'),
+    url(../fonts/CursorGothic_Bold-s.p.95169710.woff) format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: 'cursorRegular', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: var(--font-size-base); /* 16px */
+  color: var(--primary-text-color);
+  background-color: var(--color-accent);
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+ul {
+  list-style: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--color-gray);
+}
+.icon-size {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  font-weight: var(--fw-md);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 1.2px;
+}
+.text-center {
+  text-align: center;
+}
