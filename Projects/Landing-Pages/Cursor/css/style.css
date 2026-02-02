@@ -231,3 +231,20 @@
 .logo {
   width: 100%;
 }
+
+/* FEATURE SECTION */
+.feature-container {
+  display: grid;
+  grid-template-columns: 3fr auto;
+  gap: 1.2rem;
+  background-color: #1b1913;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  align-items: center;
+}
+
+.feature-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}

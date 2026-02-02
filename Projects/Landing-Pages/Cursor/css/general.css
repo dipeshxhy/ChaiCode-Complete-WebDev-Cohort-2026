@@ -138,6 +138,13 @@ a:active {
 .text-primary {
   color: var(--primary-text-color);
 }
+.text-secondary {
+  color: #bf4105;
+}
+.font-bold {
+  font-weight: var(--fw-bold);
+}
+
 .box {
   background-color: var(--color-accent-light);
   padding: 0.8rem;
@@ -155,6 +162,9 @@ a:active {
 }
 .mb-12 {
   margin-bottom: 1.2rem;
+}
+.mb-md {
+  margin-bottom: 6.2rem;
 }
 .textarea {
   outline: none;
