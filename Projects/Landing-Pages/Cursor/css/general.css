@@ -79,6 +79,9 @@ a:active {
 .text-center {
   text-align: center;
 }
+.lh-18 {
+  line-height: 1.8;
+}
 /* grid */
 .grid {
   display: grid;
@@ -92,6 +95,9 @@ a:active {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+.mt-auto {
+  margin-top: auto;
+}
 
 .trunc {
   display: inline-block;
@@ -103,6 +109,9 @@ a:active {
 /* FLEX */
 .flex {
   display: flex;
+}
+.flex-col {
+  flex-direction: column;
 }
 .items-center {
   align-items: center;
@@ -165,6 +174,9 @@ a:active {
 }
 .mb-md {
   margin-bottom: 6.2rem;
+}
+.letter-spacing-sm {
+  letter-spacing: 1.2px;
 }
 .textarea {
   outline: none;

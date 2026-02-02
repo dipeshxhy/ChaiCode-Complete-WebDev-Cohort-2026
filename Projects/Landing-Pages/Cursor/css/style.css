@@ -232,7 +232,10 @@
   width: 100%;
 }
 
-/* FEATURE SECTION */
+/*  SECTION FEATURE */
+.section-features {
+  margin: 12.8rem 0;
+}
 .feature-container {
   display: grid;
   grid-template-columns: 3fr auto;
@@ -247,4 +250,29 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+/*  SECTION  TESTIMONIALS*/
+.card {
+  background-color: #1b1913;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+}
+.card p {
+  font-family: cursorBold, sans-serif;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4px;
+}
+.author-name {
+  font-size: 1.4rem;
+  font-weight: var(--fw-bold);
+}
+.author-job {
+  font-size: 1.2rem;
+  color: var(--color-gray);
 }
