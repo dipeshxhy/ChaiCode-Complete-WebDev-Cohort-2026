@@ -148,7 +148,7 @@ a:active {
   color: var(--primary-text-color);
 }
 .text-secondary {
-  color: #bf4105;
+  color: #bf4105 !important;
 }
 .font-bold {
   font-weight: var(--fw-bold);

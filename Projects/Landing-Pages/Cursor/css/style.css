@@ -3,7 +3,7 @@
   width: 95.37px;
 }
 .main-nav {
-  position: relative;
+  /* position: relative; */
   font-weight: var(--fw-md);
   display: flex;
   align-items: center;
@@ -228,7 +228,7 @@
   align-items: center;
   justify-content: center;
 }
-.logo {
+.logo-company {
   width: 100%;
 }
 
@@ -253,6 +253,9 @@
 }
 
 /*  SECTION  TESTIMONIALS*/
+.section-testimonials {
+  margin: 12.8rem 0;
+}
 .card {
   background-color: #1b1913;
   padding: 2.4rem;
