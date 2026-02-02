@@ -1,6 +1,45 @@
 # Building Cursor Landing Page Only By Using Raw HTML & CSS
 
 This is assignment given by Sir at Cohort 2026 to practice HTML and CSS and Have some real practice on building and designing website layout . so I build this by looking [cursor.com](https://cursor.com) landing page.
+![ScreenShot of Webpage](./imgs/SC.png)
+
+## I have Used this Font and Color
+
+[link to general stylesheets](./css/general.css)
+
+```
+:root {
+  --color-accent: #14120b;
+  --color-accent-light: #1b1913;
+
+  --primary-text-color: #edecec;
+  --bg-button-white: #d7d6d5;
+  --color-gray: #b6b5b3;
+  /*  #EDECEC */
+  --font-size-small: 1.4rem;
+  --font-size-base: 1.6rem;
+
+  --fw-regular: 400;
+  --fw-md: 600;
+  --fw-bold: 700;
+
+  --spacing-sm: 0.8rem;
+  --spacing-md: 2rem;
+}
+@font-face {
+  font-family: 'cursorRegular';
+  src:
+    url(../fonts/f30fd2e485acf1bc-s.p.3d1b066d.woff2) format('woff2'),
+    url(../fonts/f30fd2e485acf1bc-s.p.3d1b066d.woff) format('woff');
+}
+@font-face {
+  font-family: 'cursorBold';
+  src:
+    url(../fonts/CursorGothic_Bold-s.p.95169710.woff2) format('woff2'),
+    url(../fonts/CursorGothic_Bold-s.p.95169710.woff) format('woff');
+}
+
+```
 
 ## Live Link
 
