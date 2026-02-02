@@ -1,5 +1,6 @@
 :root {
   --color-accent: #14120b;
+  --color-accent-light: #1b1913;
 
   --primary-text-color: #edecec;
   --bg-button-white: #d7d6d5;
@@ -99,14 +100,24 @@ a:active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* FLEX */
 .flex {
   display: flex;
 }
 .items-center {
   align-items: center;
 }
+.space-between {
+  justify-content: space-between;
+}
 .gap-sm {
   gap: 0.01rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-12 {
+  gap: 1.2rem;
 }
 .green-num {
   color: #27ae60;
@@ -117,4 +128,84 @@ a:active {
 .time {
   align-self: flex-start;
   font-size: 1.2rem;
+}
+.text-gray-light {
+  color: #807f7b;
+}
+.text-gray-dark {
+  color: #61605c;
+}
+.text-primary {
+  color: var(--primary-text-color);
+}
+.box {
+  background-color: var(--color-accent-light);
+  padding: 0.8rem;
+  color: var(--primary-text-color);
+}
+.code-box {
+  background-color: var(--color-accent-light);
+  padding: 0.8rem;
+}
+.w-full {
+  width: 100%;
+}
+.bg-gray {
+  background-color: var(--color-accent-light);
+}
+.mb-12 {
+  margin-bottom: 1.2rem;
+}
+.textarea {
+  outline: none;
+  border: none;
+  resize: none;
+}
+.list-disc {
+  list-style: disc;
+}
+.list-inside {
+  list-style-position: inside;
+}
+
+.code-snippet-box {
+  background-color: var(--color-accent-light);
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100vh;
+  padding-left: 1.2rem;
+  overflow: hidden;
+  position: relative;
+}
+.code-snippet-box code {
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 10%;
+}
+.tab {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--primary-text-color);
+  padding: 0.6rem 1.2rem;
+}
+.tab.tab--active {
+  background-color: #1b1913;
+  font-weight: var(--fw-md);
+}
+
+.code-box {
+  z-index: 10;
+  background-color: var(--color-accent-light);
+  height: 47vh;
+  background-color: var(--color-accent-light);
+  position: absolute;
+  top: 50%;
+  right: 2.4rem;
+  bottom: 10%;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  transform: translate(-18px, 0);
+  overflow: hidden;
 }

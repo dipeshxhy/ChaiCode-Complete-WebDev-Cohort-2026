@@ -158,6 +158,28 @@
         </div>
         <div class="container image-box">
           <img src="./imgs/hero-bg-img.webp" alt="hero Image" />
+            <div class="code-box">
+                  <pre>
+                  <code><span style="color:#E4E4E4EB">():</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  parser </span><span style="color:#D6D6DD">=</span><span style="color:#E4E4E4EB"> argparse</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">ArgumentParser</span><span style="color:#D6D6DD">(</span><span style="color:#D6D6DD;font-style:italic">description</span><span style="color:#D6D6DD">=</span><span style="color:#E394DC">'Run MNIST experiment'</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  parser</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">add_argument</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">'--config'</span><span style="color:#D6D6DD">,</span><span style="color:#D6D6DD;font-style:italic"> type</span><span style="color:#D6D6DD">=</span><span style="color:#82D2CE">str</span><span style="color:#D6D6DD">,</span><span style="color:#D6D6DD;font-style:italic"> default</span><span style="color:#D6D6DD">=</span><span style="color:#E394DC">'experiments/config.yaml'</span><span style="color:#D6D6DD">,</span></span>
+<span class="line"><span style="color:#D6D6DD;font-style:italic">                      help</span><span style="color:#D6D6DD">=</span><span style="color:#E394DC">'Path to config file'</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  parser</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">add_argument</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">'--device'</span><span style="color:#D6D6DD">,</span><span style="color:#D6D6DD;font-style:italic"> type</span><span style="color:#D6D6DD">=</span><span style="color:#82D2CE">str</span><span style="color:#D6D6DD">,</span><span style="color:#D6D6DD;font-style:italic"> default</span><span style="color:#D6D6DD">=</span><span style="color:#E4E4E4EB">None</span><span style="color:#D6D6DD">,</span></span>
+<span class="line"><span style="color:#D6D6DD;font-style:italic">                      help</span><span style="color:#D6D6DD">=</span><span style="color:#E394DC">'Device to use (cuda/cpu)'</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  args </span><span style="color:#D6D6DD">=</span><span style="color:#E4E4E4EB"> parser</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">parse_args</span><span style="color:#D6D6DD">()</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  </span></span>
+<span class="line"><span style="color:#EFB080">  print</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">"Starting training..."</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  model</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> history</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> test_loader </span><span style="color:#D6D6DD">=</span><span style="color:#AAA0FA"> train_model</span><span style="color:#D6D6DD">(</span><span style="color:#E4E4E4EB">args</span><span style="color:#D6D6DD">.</span><span style="color:#E4E4E4EB">config</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  </span></span>
+<span class="line"><span style="color:#EFB080">  print</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">"</span><span style="color:#D6D6DD">\n</span><span style="color:#E394DC">Evaluating model..."</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  device </span><span style="color:#D6D6DD">=</span><span style="color:#E4E4E4EB"> model</span><span style="color:#D6D6DD">.</span><span style="color:#E4E4E4EB">device </span><span style="color:#83D6C5">if</span><span style="color:#EFB080"> hasattr</span><span style="color:#D6D6DD">(</span><span style="color:#E4E4E4EB">model</span><span style="color:#D6D6DD">,</span><span style="color:#E394DC"> 'device'</span><span style="color:#D6D6DD">)</span><span style="color:#83D6C5"> else</span><span style="color:#EFB080"> next</span><span style="color:#D6D6DD">(</span><span style="color:#E4E4E4EB">model</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">parameters</span><span style="color:#D6D6DD">()).</span><span style="color:#E4E4E4EB">device</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  accuracy</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> cm </span><span style="color:#D6D6DD">=</span><span style="color:#AAA0FA"> evaluate_model</span><span style="color:#D6D6DD">(</span><span style="color:#E4E4E4EB">model</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> test_loader</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> device</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  </span></span>
+<span class="line"><span style="color:#EFB080">  print</span><span style="color:#D6D6DD">(</span><span style="color:#82D2CE">f</span><span style="color:#E394DC">"</span><span style="color:#D6D6DD">\n</span><span style="color:#E394DC">Final test accuracy: </span><span style="color:#F8C762">{</span><span style="color:#E4E4E4EB">accuracy</span><span style="color:#82D2CE">:.4f</span><span style="color:#F8C762">}</span><span style="color:#E394DC">"</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#EFB080">  print</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">"Results saved to ./results/"</span><span style="color:#D6D6DD">)</span></span>
+</code> 
+                </pre>
+                </div>
           <div class="code-container">
             <div class="code-top">
               <div class="circles">
@@ -166,8 +188,9 @@
                 <span class="circle"></span>
               </div>
               <div>Cursor</div>
-              <div>Get Cursor</div>
+              <div class="show">Get Cursor</div>
             </div>
+            <!-- CODE LEFT -->
             <div class="code-left">
               <!-- UPPER PART -->
               <div>
@@ -230,7 +253,8 @@
                     <p class="trunc-text">PyTorch MNIST Experiments</p>
                     <p class="generating-text flex items-center gap-sm">
                       <span class="green-num">+162</span>
-                      <span class="red-num">-37 .</span>
+                      <span class="red-num">-37</span>
+                      <span class="">.</span>
                       <span class="trunc"
                         >Done, configurable MNIST experiment framework with AMP
                         and reports. • **Training**: AMP, train/val split,
@@ -253,7 +277,9 @@
                     <p class="trunc-text">Set up Cursor Rules for Dashboard</p>
                     <p class="generating-text flex items-center gap-sm">
                       <span class="green-num">+37</span>
-                      <span class="red-num">-0 .</span>
+                      <span class="red-num">-0</span>
+                      <span class="">.</span>
+
                       <span class="trunc"
                         >Set up Cursor Rules for Dashboard</span
                       >
@@ -273,7 +299,8 @@
                     <p class="trunc-text">Bioinformatics Tools</p>
                     <p class="generating-text flex items-center gap-sm">
                       <span class="green-num">+135</span>
-                      <span class="red-num">-21 .</span>
+                      <span class="red-num">-21</span>
+                      <span class="">.</span>
                       <span class="trunc">Biometrics Tools</span>
                     </p>
                   </div>
@@ -281,8 +308,175 @@
                 </div>
               </div>
             </div>
-            <div class="code-middle">middle</div>
-            <div class="code-right">right</div>
+
+            <!-- CODE MIDDLE -->
+
+            <div class="code-middle">
+              <div>
+                <h3 class="code-title">PyTorch MNIST Experiments</h3>
+                <div class="box mb-12">
+                  <p>
+                    Add mixed precision training, learning rate scheduling, and
+                    proper validation. Also create an experiment config system
+                    so I can easily run different hyperparameter settings.
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 mb-sm">
+                  <p class="text-gray-light">Thought</p>
+                  <span class="text-gray-dark">10s</span>
+                </div>
+                <div class="flex items-center gap-2 mb-12">
+                  <p class="text-gray-light">Searched</p>
+                  <span class="text-gray-dark"
+                    >PyTorch mixed precision training best practices</span
+                  >
+                </div>
+                <!-- PRIMARY TEXT -->
+                <p class="text-primary mb-12">
+                  I'll enhance your MNIST trainer with a complete experiment
+                  framework including mixed precision, validation splitting, and
+                  proper configuration management. Let me start by rewriting the
+                  training module:
+                </p>
+                <!-- BOX WITH ICON FILE -->
+                <div class="flex items-center gap-12 box mb-12">
+                  <div>
+                    <img src="./imgs/file.svg" alt="File SVG" />
+                  </div>
+                  <div>
+                    <p>train_model.py</p>
+                  </div>
+                  <div>
+                    <span class="green-num">+156</span>
+                    <span class="red-num">-34</span>
+                  </div>
+                </div>
+                <p class="text-primary mb-12">
+                  Now let me update the evaluation module to save results and
+                  generate a detailed report:
+                </p>
+
+                <!-- BOX WITH ICON FILE -->
+
+                <div class="flex items-center gap-12 box mb-12">
+                  <div>
+                    <img src="./imgs/file.svg" alt="File SVG" />
+                  </div>
+                  <div>
+                    <p>evaluation.py</p>
+                  </div>
+                  <div>
+                    <span class="green-num">+24</span>
+                    <span class="red-num">-6</span>
+                  </div>
+                </div>
+                <p class="text-primary mb-12">
+                  Let me create a command-line runner script to make experiments
+                  easy to execute:
+                </p>
+                <!-- BOX WITH ICON FILE -->
+                <div class="flex items-center gap-12 box mb-12">
+                  <div>
+                    <img src="./imgs/file.svg" alt="File SVG" />
+                  </div>
+                  <div>
+                    <p>run_experiment.py</p>
+                  </div>
+                  <div>
+                    <span class="green-num">+6</span>
+                  </div>
+                </div>
+
+                <p class="text-primary mb-12">
+                  Done, configurable MNIST experiment framework with AMP and
+                  reports.
+                </p>
+                <!-- LIST -->
+                <ul class="mb-12 list-disc list-inside">
+                  <li>
+                    <span>Training</span>
+                    : AMP, train/val split, cosine schedule, gradient clipping,
+                    checkpoints
+                  </li>
+                  <li>
+                    <span>Experimentation</span>
+                    : YAML config, saved history, confusion matrix +
+                    classification report, CLI runner
+                  </li>
+                </ul>
+
+                <div class="code-box">
+                  <form>
+                    <textarea
+                      placeholder="Plan, Search, build anything ..."
+                      class="w-full bg-gray textarea"
+                    ></textarea>
+                  </form>
+                  <div class="flex items-center space-between">
+                    <div class="flex items-center gap-12">
+                      <button class="btn">Agent</button>
+                      <button class="btn">GPT-5.2 &darr;</button>
+                    </div>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="icon-size"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm.53 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v5.69a.75.75 0 0 0 1.5 0v-5.69l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="code-right">
+              <div>
+                <button class="tab">train_model.py</button>
+                <button class="tab tab--active">
+                  run_experiment.py
+                  <span>&times;</span>
+                </button>
+                <button class="tab">config.yml</button>
+              </div>
+              <div class="code-snippet-box">
+                <pre>
+
+                  <code>
+                    <span class="line"><span style="color:#E4E4E45E;font-style:italic">#!/usr/bin/env python3</span></span>
+<span class="line"><span style="color:#83D6C5">import</span><span style="color:#E4E4E4EB"> argparse</span></span>
+<span class="line"><span style="color:#83D6C5">from</span><span style="color:#E4E4E4EB"> train_model </span><span style="color:#83D6C5">import</span><span style="color:#E4E4E4EB"> train_model</span></span>
+<span class="line"><span style="color:#83D6C5">from</span><span style="color:#E4E4E4EB"> evaluation </span><span style="color:#83D6C5">import</span><span style="color:#E4E4E4EB"> evaluate_model</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#82D2CE">def</span><span style="color:#EFB080"> main</span><span style="color:#E4E4E4EB">():</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  parser </span><span style="color:#D6D6DD">=</span><span style="color:#E4E4E4EB"> argparse</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">ArgumentParser</span><span style="color:#D6D6DD">(</span><span style="color:#D6D6DD;font-style:italic">description</span><span style="color:#D6D6DD">=</span><span style="color:#E394DC">'Run MNIST experiment'</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  parser</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">add_argument</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">'--config'</span><span style="color:#D6D6DD">,</span><span style="color:#D6D6DD;font-style:italic"> type</span><span style="color:#D6D6DD">=</span><span style="color:#82D2CE">str</span><span style="color:#D6D6DD">,</span><span style="color:#D6D6DD;font-style:italic"> default</span><span style="color:#D6D6DD">=</span><span style="color:#E394DC">'experiments/config.yaml'</span><span style="color:#D6D6DD">,</span></span>
+<span class="line"><span style="color:#D6D6DD;font-style:italic">                      help</span><span style="color:#D6D6DD">=</span><span style="color:#E394DC">'Path to config file'</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  parser</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">add_argument</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">'--device'</span><span style="color:#D6D6DD">,</span><span style="color:#D6D6DD;font-style:italic"> type</span><span style="color:#D6D6DD">=</span><span style="color:#82D2CE">str</span><span style="color:#D6D6DD">,</span><span style="color:#D6D6DD;font-style:italic"> default</span><span style="color:#D6D6DD">=</span><span style="color:#E4E4E4EB">None</span><span style="color:#D6D6DD">,</span></span>
+<span class="line"><span style="color:#D6D6DD;font-style:italic">                      help</span><span style="color:#D6D6DD">=</span><span style="color:#E394DC">'Device to use (cuda/cpu)'</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  args </span><span style="color:#D6D6DD">=</span><span style="color:#E4E4E4EB"> parser</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">parse_args</span><span style="color:#D6D6DD">()</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  </span></span>
+<span class="line"><span style="color:#EFB080">  print</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">"Starting training..."</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  model</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> history</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> test_loader </span><span style="color:#D6D6DD">=</span><span style="color:#AAA0FA"> train_model</span><span style="color:#D6D6DD">(</span><span style="color:#E4E4E4EB">args</span><span style="color:#D6D6DD">.</span><span style="color:#E4E4E4EB">config</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  </span></span>
+<span class="line"><span style="color:#EFB080">  print</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">"</span><span style="color:#D6D6DD">\n</span><span style="color:#E394DC">Evaluating model..."</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  device </span><span style="color:#D6D6DD">=</span><span style="color:#E4E4E4EB"> model</span><span style="color:#D6D6DD">.</span><span style="color:#E4E4E4EB">device </span><span style="color:#83D6C5">if</span><span style="color:#EFB080"> hasattr</span><span style="color:#D6D6DD">(</span><span style="color:#E4E4E4EB">model</span><span style="color:#D6D6DD">,</span><span style="color:#E394DC"> 'device'</span><span style="color:#D6D6DD">)</span><span style="color:#83D6C5"> else</span><span style="color:#EFB080"> next</span><span style="color:#D6D6DD">(</span><span style="color:#E4E4E4EB">model</span><span style="color:#D6D6DD">.</span><span style="color:#AAA0FA">parameters</span><span style="color:#D6D6DD">()).</span><span style="color:#E4E4E4EB">device</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  accuracy</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> cm </span><span style="color:#D6D6DD">=</span><span style="color:#AAA0FA"> evaluate_model</span><span style="color:#D6D6DD">(</span><span style="color:#E4E4E4EB">model</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> test_loader</span><span style="color:#D6D6DD">,</span><span style="color:#E4E4E4EB"> device</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#E4E4E4EB">  </span></span>
+<span class="line"><span style="color:#EFB080">  print</span><span style="color:#D6D6DD">(</span><span style="color:#82D2CE">f</span><span style="color:#E394DC">"</span><span style="color:#D6D6DD">\n</span><span style="color:#E394DC">Final test accuracy: </span><span style="color:#F8C762">{</span><span style="color:#E4E4E4EB">accuracy</span><span style="color:#82D2CE">:.4f</span><span style="color:#F8C762">}</span><span style="color:#E394DC">"</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"><span style="color:#EFB080">  print</span><span style="color:#D6D6DD">(</span><span style="color:#E394DC">"Results saved to ./results/"</span><span style="color:#D6D6DD">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#83D6C5">if</span><span style="color:#D6D6DD"> __name__</span><span style="color:#D6D6DD"> ==</span><span style="color:#E394DC"> "__main__"</span><span style="color:#E4E4E4EB">:</span></span>
+<span class="line"><span style="color:#AAA0FA">  main</span><span style="color:#D6D6DD">()</span></span></code>
+                </pre>
+              
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -314,7 +508,7 @@
               <li class="logo-item">
                 <img
                   class="logo"
-                  src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/logos/linear-logo.svg"
+                  src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-eb9e0a5931092d4db1dd.svg"
                   alt="Linear Logo"
                 />
               </li>
@@ -328,7 +522,7 @@
               <li class="logo-item">
                 <img
                   class="logo"
-                  src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/logos/nvidia-logo.svg"
+                  src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-e3678011b17782740f98.svg"
                   alt="Nvidia Logo"
                 />
               </li>
@@ -342,14 +536,14 @@
               <li class="logo-item">
                 <img
                   class="logo"
-                  src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/logos/ramp-logo.svg"
+                  src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-cf60827b1c3f341d19ef.svg"
                   alt="Ramp Logo"
                 />
               </li>
               <li class="logo-item">
                 <img
                   class="logo"
-                  src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/logos/adobe-logo.svg"
+                  src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-37d2d1a1edcce15ca38c.svg"
                   alt="Adobe Logo"
                 />
               </li>
