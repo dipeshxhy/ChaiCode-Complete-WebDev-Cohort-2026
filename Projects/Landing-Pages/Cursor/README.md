@@ -70,4 +70,8 @@ In this way I build whole landing page . I have used Most semantic tags like nav
 
 - **--color-accent**
 - **--spacing-md**
-  so I got chance of learning and practicing most of CSS properties and I got more familiar in CSS Grid and FlexBox . Now I Can think and Build the Layout .
+  
+so I got chance of learning and practicing most of CSS properties and I got more familiar in CSS Grid and FlexBox . Now I Can think and Build the Layout .
+---
+Thank You For Reading it. 
+
