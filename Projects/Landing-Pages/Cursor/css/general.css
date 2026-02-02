@@ -64,6 +64,7 @@ a:active {
   color: var(--color-gray);
 }
 .icon-size {
+  display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
 }
@@ -76,4 +77,44 @@ a:active {
 }
 .text-center {
   text-align: center;
+}
+/* grid */
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.trunc {
+  display: inline-block;
+  max-width: 10rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.gap-sm {
+  gap: 0.01rem;
+}
+.green-num {
+  color: #27ae60;
+}
+.red-num {
+  color: #eb5757;
+}
+.time {
+  align-self: flex-start;
+  font-size: 1.2rem;
 }
