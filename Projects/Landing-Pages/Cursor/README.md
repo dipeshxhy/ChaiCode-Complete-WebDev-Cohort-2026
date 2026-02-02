@@ -1,6 +1,10 @@
 # Building Cursor Landing Page Only By Using Raw HTML & CSS
 
-This is assignment given by Sir at Cohort 2026 to practice HTML and CSS and Have some real practice on building and designing website layout . so I build this by looking (cursor.com)[https://cursor.com] landing page.
+This is assignment given by Sir at Cohort 2026 to practice HTML and CSS and Have some real practice on building and designing website layout . so I build this by looking [cursor.com](https://cursor.com) landing page.
+
+## Live Link
+
+**cursordev** : [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://cursordev-iota.vercel.app/)
 
 ## My Steps
 
