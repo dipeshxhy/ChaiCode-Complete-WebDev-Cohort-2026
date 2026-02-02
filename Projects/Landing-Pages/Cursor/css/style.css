@@ -35,16 +35,19 @@
   border-radius: 100px;
   transition: background-color 0.3s ease;
 }
-.download-btn:hover {
+.download-btn:hover,
+.btn:hover {
   background-color: var(--color-gray);
 }
-.signin-btn {
+.signin-btn,
+.btn-outline {
   background-color: transparent;
   color: var(--primary-text-color);
   box-shadow: inset 0 0 0 0.02rem var(--primary-text-color);
   font-weight: var(--fw-md);
 }
-.signin-btn:hover {
+.signin-btn:hover,
+.btn-outline:hover {
   box-shadow: inset 0 0 0 0.02rem var(--color-gray);
 }
 
@@ -278,4 +281,19 @@
 .author-job {
   font-size: 1.2rem;
   color: var(--color-gray);
+}
+
+/* SECTION USE */
+.section-use {
+  margin: 12.8rem 0;
+}
+
+/* SECTION CHANGELOG */
+.section-changelog {
+  margin: 12.8rem 0;
+}
+
+/* SECTION TEAM */
+.section-team {
+  margin: 12.8rem 0;
 }

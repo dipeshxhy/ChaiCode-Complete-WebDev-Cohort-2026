@@ -98,6 +98,9 @@ a:active {
 .mt-auto {
   margin-top: auto;
 }
+.mb-20 {
+  margin-bottom: 2rem;
+}
 
 .trunc {
   display: inline-block;
@@ -142,7 +145,7 @@ a:active {
   color: #807f7b;
 }
 .text-gray-dark {
-  color: #61605c;
+  color: #61605c !important;
 }
 .text-primary {
   color: var(--primary-text-color);
@@ -151,7 +154,23 @@ a:active {
   color: #bf4105 !important;
 }
 .font-bold {
-  font-weight: var(--fw-bold);
+  font-weight: 700;
+}
+.text-20 {
+  font-size: 2rem;
+}
+.text-lg {
+  font-size: 4.4rem;
+}
+.lh-sm {
+  line-height: 1.1;
+}
+/* rounded border */
+.rounded-sm {
+  border-radius: 0.4rem;
+}
+.rounded-md {
+  border-radius: 0.8rem;
 }
 
 .box {
