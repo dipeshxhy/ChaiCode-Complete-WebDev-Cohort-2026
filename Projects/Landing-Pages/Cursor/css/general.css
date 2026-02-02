@@ -69,6 +69,9 @@ a:active {
   width: 1.6rem;
   height: 1.6rem;
 }
+a.text-secondary:hover {
+  color: #e07b3f !important;
+}
 
 .heading-secondary {
   font-size: 1.8rem;
