@@ -18,4 +18,13 @@ Our Hitesh Sir has tauught always look row wise , one component at one time . so
 - I made a **container** class that has **max-width:1300px**. It helps to keep the layout fixed at center padding on both sides. This helps in consistent layout of overall webpage.
 - I also create code editor which show above of hero page by manually and It help me to practice more in Grid and make columns and place the code .
 
-3.
+3. **Build Trusted Section** : In this section , I got all the company logos and make div for each logo , give padding and used **flexbox** to bring in one row and center it by using flex properties **align-items** & **justify-content**: **center** . easy
+
+4. **Features Section** : This is most easy section , first I make utility class for grid like .grid, .grid--2-cols, .grid--3-cols in general css because this is most used class for layout building . then after I took screenshot for image and create two columns of size 2fr and auto for image and align them to center .
+5. **Testimonials Section** : I love making Card because Just design one card and copy and paste to other card . I used grid for making 4 columns and In one card I divide into top and bottom part and In this way The vertical alignment of card to push bottom part at bottom is easy just by **margin-top:auto** That is simple way of it.
+
+In this way I build whole landing page . I have used Most semantic tags like nav, section,main,time,footer and I have used **:root** for making variables like
+
+- **--color-accent**
+- **--spacing-md**
+  so I got chance of learning and practicing most of CSS properties and I got more familiar in CSS Grid and FlexBox . Now I Can think and Build the Layout .

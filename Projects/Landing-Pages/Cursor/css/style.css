@@ -4,11 +4,18 @@
 }
 .main-nav {
   /* position: relative; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: var(--color-accent);
   font-weight: var(--fw-md);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 1.8rem;
+  padding: 3rem 1.8rem;
+  z-index: 999;
 }
 .main-nav-list {
   list-style: none;
@@ -296,4 +303,44 @@
 /* SECTION TEAM */
 .section-team {
   margin: 12.8rem 0;
+}
+
+/* SECTION HIGHLIGHTS */
+.section-highlights {
+  margin: 12.8rem 0;
+}
+.highlights-box {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+.highlights-box h2 {
+  justify-self: start;
+}
+
+/* SECTION CTA */
+.section-cta {
+  margin: 12.8rem 0;
+}
+
+/* SECTION FOOTER */
+.buttons {
+  background-color: #292821;
+  padding: 0.2rem 0.8rem;
+  width: 12rem;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+}
+.buttons button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.buttons button:hover {
+  color: var(--color-gray);
 }
