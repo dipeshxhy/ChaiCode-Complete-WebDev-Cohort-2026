@@ -34,3 +34,7 @@
 - second is card it is just another div which is display grid and showing two div which has card class
 
 5. UI Preview Section : This is same as above. I center the div with subheading, heading and text and again I create container which has only image . I give section class card so it gives box shadow around it .
+
+6. Enterprise section : This is most complex till now. In this section there is Image section which I keep inside container there I create div for gradient and also div which show above image with some text . I make this div position absolute and the container div relative and used top and left property to adjust above image.
+
+- There is most unique way to gray the image by using filter:grayscale(1) which make image gray soo I used that to make logo to look gray .

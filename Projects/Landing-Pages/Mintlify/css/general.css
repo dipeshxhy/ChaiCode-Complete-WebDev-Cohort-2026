@@ -11,6 +11,8 @@
   --color-gray--light: #c1c7d0;
   --color-gray--dark: #243047;
 
+  --bg-gray--main: #141517;
+
   /* --color-secondary: #ff9800;
   --color-background-main: #f5f5f5;
   --color-text: #e9ecef;
@@ -73,6 +75,12 @@ body {
 }
 
 /* ******************* */
+.lh-12 {
+  line-height: 1.2;
+}
+.bg-gray--dark {
+  background-color: var(--bg-gray--main);
+}
 .text-lg {
   font-size: 4.4rem;
 }
@@ -100,6 +108,9 @@ body {
 .w-60 {
   width: 60%;
 }
+.w-80 {
+  width: 80%;
+}
 
 .mb-2xl {
   margin-bottom: 9.6rem !important;
@@ -123,11 +134,37 @@ body {
 .mt-md {
   margin-top: 4.8rem !important;
 }
+.mt-2xl {
+  margin-top: 12.8rem !important;
+}
 .mb-2 {
   margin-bottom: 2rem !important;
 }
 .mb-md {
   margin-bottom: 4.8rem !important;
+}
+.mb-lg {
+  margin-bottom: 6.2rem !important;
+}
+.relative {
+  position: relative;
+}
+.h-full {
+  height: 100%;
+}
+.rounded-md {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.rounded-lg {
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 .text-center {
   text-align: center !important;
