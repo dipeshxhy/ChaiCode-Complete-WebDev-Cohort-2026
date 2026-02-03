@@ -1,0 +1,27 @@
+## Building Mintlify
+
+### My Steps
+
+1. Navbar : I make container of width 1200px and center it by giving margin-auto and I used flex to space between the three div .
+2. Hero section : While making Hero section I divide into two parts first top part is hero-banner which has glassy background so I make div and apply text-center property so it comes into center and again Inside I create another div which is flex to layout button, text and svg into one row.
+
+- I create Outer div which take full width and
+- I create nested div inside it and make it width 50% which is half of outer div so it is exactly half of width then
+- I center it with flex, and Inside it I create structure which flow top to bottom so I apply flex-col.
+- It includes Hero title, Hero text and a email form so I layout it
+
+```
+<div> //outer div
+ <div class="w-half flex items-center justify-center flex-col"> // half of outer
+   <div >
+   <h1>Some Hero Text</h1> //give greater font-size
+   </div> // for title
+   <div class="w-80 mx-auto"> // why 80% of parent to show the text into new line        so less width given than parent
+   <p>some text</p>
+   </div> // for text
+   <div class="w-80"></div> // for form
+ </div>
+</div>
+```
+
+**NOTE**: First make Outer div full width then make nested div and adjust width in % so it comes into required layout . This is TIP
