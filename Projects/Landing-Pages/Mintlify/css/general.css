@@ -146,5 +146,5 @@ a {
   color: var(--color-dark--main);
 }
 .btn--full:hover {
-  background-color: #fcfcfd;
+  background-color: var(--color-gray--light);
 }

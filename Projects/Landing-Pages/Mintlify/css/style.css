@@ -115,3 +115,6 @@
   font-weight: 600;
   cursor: pointer;
 }
+.hero-form form button:hover {
+  background-color: var(--color-gray--light);
+}
