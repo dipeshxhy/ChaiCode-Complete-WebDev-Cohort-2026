@@ -5,7 +5,7 @@
   --color-primary--light: #90ecc5;
   --color-white: #fff;
 
-  --color-dark--main: #01081b;
+  --color-dark--main: #08090b;
   --color-dark--light: #01091e;
   --color-gray--main: #f2f6fa;
   --color-gray--light: #c1c7d0;
@@ -40,11 +40,47 @@ body {
   background-color: var(--color-dark--main);
   color: var(--color-gray--main);
 }
+/* GRID */
+.grid {
+  display: grid;
+}
+.grid-cols--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-items: center;
+}
+.justify-self-center {
+  justify-self: center;
+}
+
+/* ******************* */
+.p-2 {
+  padding: 2rem;
+}
+.h-20 {
+  height: 20rem;
+}
+.h-full {
+  height: 100%;
+}
 .w-half {
   width: 50%;
 }
 .w-full {
   width: 100%;
+}
+.mb-2xl {
+  margin-bottom: 9.6rem;
 }
 .mx-auto {
   margin: 0 auto;

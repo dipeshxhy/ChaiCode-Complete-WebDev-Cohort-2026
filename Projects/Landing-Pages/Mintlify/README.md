@@ -25,3 +25,5 @@
 ```
 
 **NOTE**: First make Outer div full width then make nested div and adjust width in % so it comes into required layout . This is TIP
+
+3. Section TrustedBy : This is very easy section to build first download all svg from the website and add into svg file by creating file for eac logo . **Note : change the fill color to #fff so it shows white in color and also there is some path may miss while copying element so copy them like in Microsoft Logo only logo comes we have to copy by clicking in microsoft and there path in the file**.Then after It is very simple make 4 columns grid and create 8 div and paste src in img tag it will show all . This is very awesome when all Logos shown in screen .

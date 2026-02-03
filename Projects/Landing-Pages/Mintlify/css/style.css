@@ -1,7 +1,7 @@
 /* HEADER */
 .header {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
     url(/assets/svgs/bg-dark.svg);
@@ -83,7 +83,7 @@
   line-height: 1.6;
 }
 .hero-form {
-  width: 80%;
+  width: 60%;
   padding: 0.4rem 0.8rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.3);
