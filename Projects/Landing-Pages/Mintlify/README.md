@@ -32,3 +32,5 @@
 
 - first I make upper part by div with container class
 - second is card it is just another div which is display grid and showing two div which has card class
+
+5. UI Preview Section : This is same as above. I center the div with subheading, heading and text and again I create container which has only image . I give section class card so it gives box shadow around it .

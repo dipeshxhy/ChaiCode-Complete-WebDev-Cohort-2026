@@ -97,6 +97,10 @@ body {
 .w-full {
   width: 100%;
 }
+.w-60 {
+  width: 60%;
+}
+
 .mb-2xl {
   margin-bottom: 9.6rem !important;
 }
@@ -127,6 +131,9 @@ body {
 }
 .text-center {
   text-align: center !important;
+}
+.text-md {
+  font-size: 2rem;
 }
 .icon {
   display: inline-block;
