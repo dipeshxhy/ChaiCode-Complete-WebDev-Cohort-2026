@@ -5,7 +5,7 @@
   --color-primary--light: #90ecc5;
   --color-white: #fff;
 
-  --color-dark--main: #08090b;
+  --color-dark--main: #030406;
   --color-dark--light: #01091e;
   --color-gray--main: #f2f6fa;
   --color-gray--light: #c1c7d0;
@@ -18,7 +18,7 @@
   --bg-gray--dark: #0d1325;
   --text-color--primary: #ced4da; */
   /* font */
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-inter: 'Inter', sans-serif;
   --fs-base: 1rem;
   --fw--base: 500;
 }
@@ -33,12 +33,18 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-inter);
   font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 500;
   background-color: var(--color-dark--main);
   color: var(--color-gray--main);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.text-gray {
+  color: var(--color-gray--light);
 }
 /* GRID */
 .grid {
@@ -62,10 +68,22 @@ body {
 .justify-self-center {
   justify-self: center;
 }
+.max-w-md {
+  max-width: 48rem;
+}
 
 /* ******************* */
+.text-lg {
+  font-size: 4.4rem;
+}
+.fw-bold {
+  font-weight: 700;
+}
 .p-2 {
   padding: 2rem;
+}
+.pb-2xl {
+  padding-bottom: 9.6rem;
 }
 .h-20 {
   height: 20rem;
@@ -80,7 +98,7 @@ body {
   width: 100%;
 }
 .mb-2xl {
-  margin-bottom: 9.6rem;
+  margin-bottom: 9.6rem !important;
 }
 .mx-auto {
   margin: 0 auto;
@@ -88,29 +106,35 @@ body {
 .ml-auto {
   margin-left: auto;
 }
+.mt-auto {
+  margin-top: auto;
+}
 .mt-2 {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 .mt-44 {
-  margin-top: 4.4rem;
+  margin-top: 4.4rem !important;
 }
 
-mt-md {
-  margin-top: 4.8rem;
+.mt-md {
+  margin-top: 4.8rem !important;
 }
 .mb-2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 .mb-md {
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.8rem !important;
 }
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 .icon {
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
+}
+.text-upper {
+  text-transform: uppercase;
 }
 ul {
   list-style: none;
@@ -183,4 +207,11 @@ a {
 }
 .btn--full:hover {
   background-color: var(--color-gray--light);
+}
+
+/* CARD */
+.card {
+  box-shadow: 0 0 0 1.2px rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.4rem;
 }

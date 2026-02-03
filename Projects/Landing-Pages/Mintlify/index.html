@@ -9,13 +9,20 @@
       href="/assets/svgs/logo.svg"
       type="image/x-icon"
     />
+    <!-- INTER FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <!--HEADER AND NAVIGATION -->
-    <header class="header mb-2xl">
+    <header class="header pb-2xl">
       <nav class="main-nav">
         <div class="container flex justify-between items-center">
           <div>
@@ -94,7 +101,7 @@
 
     <main>
       <!-- SECTION TRUSTED-BY -->
-      <section class="section-trustedBy">
+      <section class="section-trustedBy mb-2xl">
         <div class="container grid grid-cols--4 gap-md items-center">
           <div class="p-2">
             <img
@@ -147,6 +154,51 @@
               alt="Lovable logo"
               class="w-full"
             />
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION FEATURES -->
+      <section class="section-features">
+        <div class="container flex flex-col items-center gap-2 mb-md">
+          <h2 class="text-lg fw-bold">Built for the intelligence age</h2>
+          <p class="text-center feature-text">
+            Integrate AI into every part of your docs lifecycle. Woven into how
+            your knowledge is written, maintained, and understood by both users
+            and LLMs.
+          </p>
+        </div>
+        <!-- DOWN PART CARD -->
+        <div class="container grid grid-cols--2 gap-2">
+          <div class="card flex flex-col gap-2 p-2">
+            <p class="text-primary">LLMs.txt & MCP</p>
+            <h3>Built for both people and AI</h3>
+            <p class="text-gray mb-md">
+              Ensure your product shows up in the AI workflows users already
+              rely on. We support llms.txt, MCP, and whatever comes next.
+            </p>
+            <div class="mt-auto">
+              <img
+                class="w-full"
+                src="/assets/imgs/feature-1.png"
+                alt="Feature Image"
+              />
+            </div>
+          </div>
+          <div class="card flex flex-col gap-2 p-2">
+            <p class="text-primary text-upper">agent</p>
+            <h3>Self-updating knowledge management</h3>
+            <p class="text-gray">
+              Draft, edit, and maintain content with a context-aware agent. Move
+              faster and more consistently without the documentation debt.
+            </p>
+            <div class="mt-auto">
+              <img
+                class="w-full"
+                src="/assets/imgs/Screenshot 2026-02-03 195005.png"
+                alt="Feature Image"
+              />
+            </div>
           </div>
         </div>
       </section>

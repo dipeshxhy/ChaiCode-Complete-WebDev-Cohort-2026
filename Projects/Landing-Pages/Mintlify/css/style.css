@@ -118,3 +118,10 @@
 .hero-form form button:hover {
   background-color: var(--color-gray--light);
 }
+
+/* SECTION FEATURES */
+.feature-text {
+  max-width: 60%;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
