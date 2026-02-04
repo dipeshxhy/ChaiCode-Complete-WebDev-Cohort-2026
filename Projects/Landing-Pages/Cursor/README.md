@@ -3,6 +3,10 @@
 This is assignment given by Sir at Cohort 2026 to practice HTML and CSS and Have some real practice on building and designing website layout . so I build this by looking [cursor.com](https://cursor.com) landing page.
 ![ScreenShot of Webpage](./imgs/SC.png)
 
+## Live Link
+
+**cursordev** : [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://cursordev-iota.vercel.app/)
+
 ## I have Used this Font and Color
 
 [link to general stylesheets](./css/general.css)
@@ -41,9 +45,7 @@ This is assignment given by Sir at Cohort 2026 to practice HTML and CSS and Have
 
 ```
 
-## Live Link
 
-**cursordev** : [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://cursordev-iota.vercel.app/)
 
 ## My Steps
 

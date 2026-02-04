@@ -1,0 +1,567 @@
+/* ====================================
+   RESPONSIVE STYLES
+   ==================================== */
+
+/* 1148px - Large Tablets & Small Laptops */
+@media (max-width: 1148px) {
+  html {
+    font-size: 58%;
+  }
+
+  .container {
+    max-width: 1100px;
+  }
+
+  .code-container {
+    width: 95%;
+    height: 85vh;
+  }
+
+  .grid--5-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .highlights-box {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* 1050px - Tablets Landscape */
+@media (max-width: 1050px) {
+  html {
+    font-size: 56%;
+  }
+
+  .container {
+    max-width: 980px;
+  }
+
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--5-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .code-container {
+    grid-template-columns: 1fr 2fr auto;
+  }
+
+  .logo-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* 978px - Tablets */
+@media (max-width: 978px) {
+  html {
+    font-size: 54%;
+  }
+
+  .container {
+    max-width: 900px;
+  }
+
+  .main-nav {
+    padding: 2rem 1.6rem;
+  }
+
+  .main-nav-list {
+    gap: 2rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--5-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .text-lg {
+    font-size: 3.6rem;
+  }
+
+  .text-2xl {
+    font-size: 6rem;
+  }
+
+  .code-container {
+    height: 80vh;
+  }
+
+  .highlights-box {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .w-70 {
+    width: 85% !important;
+  }
+
+  .p-md {
+    padding: 4rem !important;
+  }
+}
+
+/* 768px - Tablets Portrait & Large Phones */
+@media (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+
+  .container {
+    max-width: 700px;
+    padding: 0 1.6rem;
+  }
+
+  /* Navigation */
+  .main-nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .resource-box {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  /* Grids */
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols,
+  .grid--5-cols {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Hero Section */
+  .section-hero {
+    margin: 8rem 0;
+  }
+
+  .hero {
+    margin: 8rem 0;
+  }
+
+  .hero-text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .text-lg {
+    font-size: 3.2rem;
+  }
+
+  .text-2xl {
+    font-size: 5rem;
+  }
+
+  .code-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.4rem auto auto;
+    height: auto;
+    min-height: 60vh;
+    width: 98%;
+  }
+
+  .code-left,
+  .code-middle,
+  .code-right {
+    border-right: none;
+    border-bottom: 0.5px solid #333;
+  }
+
+  .code-right {
+    display: none;
+  }
+
+  .code-box {
+    position: relative;
+    transform: none;
+    right: 0;
+    height: auto;
+    min-height: 40vh;
+  }
+
+  /* Logo List */
+  .logo-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .logo-item {
+    width: 100%;
+    padding: 2.4rem;
+  }
+
+  /* Features */
+  .feature-container {
+    padding: 2rem;
+  }
+
+  /* Sections */
+  .section-trustedBy,
+  .section-features,
+  .section-testimonials,
+  .section-use,
+  .section-changelog,
+  .section-team,
+  .section-highlights,
+  .section-cta {
+    margin: 8rem 0;
+  }
+
+  .mb-md {
+    margin-bottom: 4rem;
+  }
+
+  .w-70 {
+    width: 100% !important;
+  }
+
+  .p-md {
+    padding: 3rem !important;
+  }
+}
+
+/* 648px - Large Phones */
+@media (max-width: 648px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 1.2rem;
+  }
+
+  /* Navigation */
+  .main-nav {
+    padding: 1.2rem;
+  }
+
+  .logo-svg {
+    width: 80px;
+  }
+
+  .btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  /* Typography */
+  .hero-text {
+    font-size: 1.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.6rem;
+  }
+
+  .text-lg {
+    font-size: 2.8rem;
+  }
+
+  .text-2xl {
+    font-size: 4rem;
+  }
+
+  .text-sm {
+    font-size: 1.6rem;
+  }
+
+  .text-20 {
+    font-size: 1.8rem;
+  }
+
+  /* Code Container */
+  .code-container {
+    width: 100%;
+    padding-inline: 0.8rem;
+  }
+
+  .code-left,
+  .code-middle {
+    padding: 1rem;
+  }
+
+  .code-title {
+    font-size: 1.4rem;
+  }
+
+  /* Sections */
+  .section-hero {
+    margin: 6rem 0;
+  }
+
+  .hero {
+    margin: 6rem 0;
+  }
+
+  .section-trustedBy,
+  .section-features,
+  .section-testimonials,
+  .section-use,
+  .section-changelog,
+  .section-team,
+  .section-highlights,
+  .section-cta {
+    margin: 6rem 0;
+  }
+
+  .mb-md {
+    margin-bottom: 3rem;
+  }
+
+  /* Cards */
+  .card {
+    padding: 1.8rem;
+  }
+
+  /* Utility Classes */
+  .gap-2 {
+    gap: 1.5rem;
+  }
+
+  .p-md {
+    padding: 2rem !important;
+  }
+}
+
+/* 480px - Mobile Phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 48%;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Navigation */
+  .main-nav {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .main-nav-list {
+    gap: 1rem;
+  }
+
+  .logo-svg {
+    width: 70px;
+  }
+
+  .btn {
+    padding: 0.4rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  /* Typography */
+  .hero-text {
+    font-size: 1.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .text-lg {
+    font-size: 2.4rem;
+  }
+
+  .text-2xl {
+    font-size: 3.2rem;
+  }
+
+  .text-sm {
+    font-size: 1.4rem;
+  }
+
+  .text-20 {
+    font-size: 1.6rem;
+  }
+
+  /* Code Container */
+  .code-container {
+    padding-inline: 0.6rem;
+    min-height: 50vh;
+  }
+
+  .code-left,
+  .code-middle {
+    padding: 0.8rem;
+  }
+
+  .code-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .progress-text {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .trunc-text {
+    font-size: 1rem;
+    max-width: 12rem;
+  }
+
+  .generating-text {
+    font-size: 1.2rem;
+  }
+
+  /* Sections */
+  .section-hero {
+    margin: 4rem 0;
+  }
+
+  .hero {
+    margin: 4rem 0;
+  }
+
+  .section-trustedBy,
+  .section-features,
+  .section-testimonials,
+  .section-use,
+  .section-changelog,
+  .section-team,
+  .section-highlights,
+  .section-cta {
+    margin: 4rem 0;
+  }
+
+  .mb-md {
+    margin-bottom: 2.4rem;
+  }
+
+  .mb-20 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Cards */
+  .card {
+    padding: 1.5rem;
+  }
+
+  /* Logo */
+  .logo-item {
+    padding: 2rem;
+  }
+
+  /* Features */
+  .feature-container {
+    padding: 1.5rem;
+  }
+
+  /* Utility Classes */
+  .gap-2 {
+    gap: 1.2rem;
+  }
+
+  .gap-12 {
+    gap: 0.8rem;
+  }
+
+  .p-md {
+    padding: 1.5rem !important;
+  }
+
+  /* Buttons */
+  .buttons {
+    width: 10rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .buttons button {
+    font-size: 1.6rem;
+  }
+
+  /* Avatar */
+  .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .author-name {
+    font-size: 1.2rem;
+  }
+
+  .author-job {
+    font-size: 1rem;
+  }
+
+  /* Code Snippet Box */
+  .code-snippet-box {
+    font-size: 1rem;
+    padding-left: 0.8rem;
+  }
+
+  .code-snippet-box code {
+    left: 5%;
+  }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 380px) {
+  html {
+    font-size: 45%;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+  }
+
+  .text-lg {
+    font-size: 2rem;
+  }
+
+  .text-2xl {
+    font-size: 2.8rem;
+  }
+
+  .code-container {
+    padding-inline: 0.4rem;
+  }
+
+  .main-nav {
+    padding: 0.8rem;
+  }
+
+  .logo-svg {
+    width: 60px;
+  }
+}
