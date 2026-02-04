@@ -1,0 +1,491 @@
+/* 1150px and below */
+@media (max-width: 1150px) {
+  html {
+    font-size: 58%;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 2.4rem;
+  }
+
+  .hero-form {
+    width: 70%;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+
+  .grid-cols--5 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .above-text {
+    padding: 0 4rem;
+  }
+
+  .company-logo {
+    flex-wrap: wrap;
+  }
+}
+
+/* 948px and below */
+@media (max-width: 948px) {
+  html {
+    font-size: 55%;
+  }
+
+  .main-nav {
+    padding: 1.6rem 0;
+  }
+
+  .nav-list {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .hero-form {
+    width: 85%;
+  }
+
+  .grid-cols--2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-cols--3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .grid-cols--4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .grid-cols--5 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .text-lg {
+    font-size: 3.6rem;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .feature-text {
+    max-width: 80%;
+  }
+
+  .w-half,
+  .w-48,
+  .w-60 {
+    width: 70% !important;
+  }
+
+  .w-80 {
+    width: 90% !important;
+  }
+
+  .above-text {
+    padding: 0 2rem;
+    top: 10%;
+  }
+
+  .customer-card--logo svg {
+    width: 15rem;
+  }
+
+  .customer-card--logo svg.x {
+    width: 8rem;
+  }
+
+  .company-logo {
+    width: 90%;
+  }
+
+  .footer-nav {
+    gap: 3.2rem;
+  }
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+
+  .main-nav .btn {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .nav-list {
+    gap: 1.2rem;
+  }
+
+  .hero-banner {
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-text {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .hero-form {
+    width: 100%;
+  }
+
+  .hero-form form {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .hero-form form input,
+  .hero-form form button {
+    width: 100%;
+  }
+
+  .grid-cols--3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-cols--4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-cols--5 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .text-lg {
+    font-size: 3.2rem;
+  }
+
+  .feature-text {
+    max-width: 100%;
+  }
+
+  .w-half,
+  .w-48,
+  .w-60 {
+    width: 100% !important;
+  }
+
+  .p-lg {
+    padding: 6.4rem !important;
+  }
+
+  .p-2xl {
+    padding: 8rem !important;
+  }
+
+  .gap-md {
+    gap: 3.2rem;
+  }
+
+  .above-text {
+    padding: 0 1.6rem;
+    top: 5%;
+  }
+
+  .above-text h2 {
+    font-size: 2rem;
+  }
+
+  .company-logo {
+    width: 100%;
+    gap: 2.4rem;
+  }
+
+  .company-logo img {
+    width: 10rem;
+  }
+
+  .customer-card img {
+    height: 40vh;
+  }
+
+  .customer-card--logo svg {
+    width: 12rem;
+  }
+
+  .customer-card--logo svg.x {
+    width: 6rem;
+  }
+
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.4rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .glassy.buttons {
+    margin-top: 1.6rem;
+  }
+}
+
+/* 648px and below */
+@media (max-width: 648px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 0 1.6rem;
+  }
+
+  .main-nav {
+    padding: 1.2rem 0;
+  }
+
+  .main-nav img {
+    height: 2.4rem;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .hero-banner button {
+    padding: 0.6rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .text-lg {
+    font-size: 2.8rem;
+  }
+
+  .text-md {
+    font-size: 1.8rem;
+  }
+
+  .mt-2xl,
+  .mt-44 {
+    margin-top: 6.4rem !important;
+  }
+
+  .mb-2xl {
+    margin-bottom: 6.4rem !important;
+  }
+
+  .p-md {
+    padding: 3.2rem !important;
+  }
+
+  .p-lg {
+    padding: 4.8rem !important;
+  }
+
+  .p-2xl {
+    padding: 6.4rem !important;
+  }
+
+  .pb-2xl {
+    padding-bottom: 6.4rem !important;
+  }
+
+  .card {
+    padding: 1.6rem;
+  }
+
+  .icon-box {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .above-text {
+    padding: 0 1.2rem;
+  }
+
+  .company-logo {
+    gap: 1.6rem;
+  }
+
+  .company-logo img {
+    width: 8rem;
+  }
+
+  .customer-card img {
+    height: 35vh;
+  }
+
+  .customer-card--logo svg {
+    width: 10rem;
+  }
+
+  .customer-card--logo svg.x {
+    width: 5rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .footer-bottom .flex {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}
+
+/* 480px and below */
+@media (max-width: 480px) {
+  html {
+    font-size: 48%;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .main-nav .flex > div:last-child {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  .main-nav .btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .hero-banner {
+    padding: 1rem;
+  }
+
+  .hero-banner p {
+    font-size: 1.3rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin: 1.2rem 0;
+  }
+
+  .hero-title h1 {
+    font-size: 2.4rem;
+  }
+
+  .text-lg {
+    font-size: 2.4rem;
+  }
+
+  .text-md {
+    font-size: 1.6rem;
+  }
+
+  .gap-md {
+    gap: 2.4rem;
+  }
+
+  .gap-2 {
+    gap: 1.6rem;
+  }
+
+  .mt-2xl,
+  .mt-44,
+  .mt-md {
+    margin-top: 4.8rem !important;
+  }
+
+  .mb-2xl,
+  .mb-lg,
+  .mb-md {
+    margin-bottom: 4.8rem !important;
+  }
+
+  .p-2 {
+    padding: 1.6rem !important;
+  }
+
+  .p-md {
+    padding: 2.4rem !important;
+  }
+
+  .p-lg,
+  .p-2xl {
+    padding: 3.2rem !important;
+  }
+
+  .pb-2xl {
+    padding-bottom: 4.8rem !important;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .icon-box {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .above-text {
+    display: none;
+  }
+
+  .company-logo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .company-logo img {
+    width: 100%;
+  }
+
+  .customer-card img {
+    height: 30vh;
+  }
+
+  .customer-card--logo svg {
+    width: 8rem;
+  }
+
+  .customer-card--logo svg.x {
+    width: 4rem;
+  }
+
+  .footer-nav {
+    grid-template-columns: 1fr !important;
+    gap: 2.4rem;
+  }
+
+  .footer-top img {
+    height: 2.4rem;
+  }
+
+  .footer-bottom svg {
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+
+  .glassy.buttons button {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

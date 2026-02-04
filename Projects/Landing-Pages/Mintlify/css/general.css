@@ -145,22 +145,22 @@ body {
   height: 20rem;
 }
 .h-full {
-  height: 100%;
+  height: 100% !important;
 }
 .w-half {
-  width: 50%;
+  width: 50% !important;
 }
 .w-full {
-  width: 100%;
+  width: 100% !important;
 }
 .w-60 {
-  width: 60%;
+  width: 60% !important;
 }
 .w-48 {
-  width: 48%;
+  width: 48% !important;
 }
 .w-80 {
-  width: 80%;
+  width: 80% !important;
 }
 
 .mb-2xl {
