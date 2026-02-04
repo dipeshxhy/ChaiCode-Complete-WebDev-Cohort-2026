@@ -1,5 +1,13 @@
 ## Building Mintlify
 
+## Screenshot of my build webpage
+
+![Screenshot](/assets/SC.png)
+
+## Live demo
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://my-mintlify.vercel.app/)
+
 ### My Steps
 
 1. Navbar : I make container of width 1200px and center it by giving margin-auto and I used flex to space between the three div .
