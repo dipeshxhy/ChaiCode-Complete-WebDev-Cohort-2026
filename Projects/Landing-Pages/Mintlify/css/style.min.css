@@ -1,20 +1,16 @@
-/* HEADER */
 .header {
   min-height: 100vh;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    linear-gradient(rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8)),
     url(/assets/svgs/bg-dark.svg);
   background-size: cover;
   background-position: center;
 }
-
-/* MAIN NAV */
 .main-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-
   background-color: var(--color-dark--main);
   padding: 2.4rem 0;
   z-index: 100;
@@ -26,17 +22,13 @@
   font-size: 1.8rem;
   font-weight: 500;
 }
-
 .nav-list a:hover {
   color: var(--color-primary);
 }
-
-/* HERO SECTION */
-
 .hero-banner {
   padding: 0.4rem 0.8rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.9);
+  border: 1px solid rgb(255 255 255 / 0.3);
   border-radius: 100px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -76,7 +68,6 @@
 .hero-title h1 {
   line-height: 1.2;
 }
-
 .hero-text {
   width: 80%;
   font-size: 2.2rem;
@@ -85,8 +76,8 @@
 .hero-form {
   width: 60%;
   padding: 0.4rem 0.8rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.9);
+  border: 1px solid rgb(255 255 255 / 0.3);
   border-radius: 100px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -101,7 +92,7 @@
   border-radius: 100px;
   outline: none;
   font-size: 1.6rem;
-  background: transparent;
+  background: #fff0;
   color: var(--color-white);
 }
 .hero-form form button {
@@ -117,15 +108,11 @@
 .hero-form form button:hover {
   background-color: var(--color-gray--light);
 }
-
-/* SECTION FEATURES */
 .feature-text {
   max-width: 60%;
   font-size: 1.8rem;
   line-height: 1.6;
 }
-
-/* SECTION ENTERPRISE */
 .section-enterprise {
   padding-block: 4.8rem;
 }
@@ -139,8 +126,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(rgb(0 0 0 / 0.4), rgb(0 0 0 / 0.7));
   opacity: 0;
 }
 .image-box:hover .gradient {
@@ -153,14 +139,11 @@
   top: 15%;
   padding: 0 8rem;
 }
-
 .company-logo img {
   width: 12rem;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
 }
-
-/* SECTION CUSTOMER */
 .customer-card img {
   width: 100%;
   height: 50vh;
@@ -171,9 +154,6 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-/* .customer-card--logo img {
-  width: 6.2rem;
-} */
 .read-more {
   display: inline-block;
   margin-top: auto;
@@ -207,8 +187,6 @@
 .customer-card--logo svg.x {
   width: 10rem;
 }
-
-/* SECTION CTA */
 .section-cta {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgb(255 255 255 / 0.1);
 }

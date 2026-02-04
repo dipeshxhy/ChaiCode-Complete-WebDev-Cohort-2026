@@ -1,25 +1,13 @@
 :root {
-  /* #0D1325 */
-  /* color */
   --color-primary: #078e5c;
   --color-primary--light: #90ecc5;
   --color-white: #fff;
-
   --color-dark--main: #030406;
   --color-dark--light: #01091e;
   --color-gray--main: #f2f6fa;
   --color-gray--light: #606163;
   --color-gray--dark: #243047;
-
   --bg-gray--main: #141517;
-
-  /* --color-secondary: #ff9800;
-  --color-background-main: #f5f5f5;
-  --color-text: #e9ecef;
-  --color-white: #fff;
-  --bg-gray--dark: #0d1325;
-  --text-color--primary: #ced4da; */
-  /* font */
   --font-inter: 'Inter', sans-serif;
   --fs-base: 1rem;
   --fw--base: 500;
@@ -33,7 +21,6 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
-
 body {
   font-family: var(--font-inter);
   font-size: 1.6rem;
@@ -51,7 +38,6 @@ body {
 .btn-bg--gray {
   background-color: var(--color-gray--light) !important;
 }
-/* GRID */
 .grid {
   display: grid;
 }
@@ -79,8 +65,6 @@ body {
 .max-w-md {
   max-width: 48rem;
 }
-
-/* ******************* */
 .lh-12 {
   line-height: 1.2;
 }
@@ -133,7 +117,6 @@ body {
 .w-80 {
   width: 80%;
 }
-
 .mb-2xl {
   margin-bottom: 9.6rem !important;
 }
@@ -152,7 +135,6 @@ body {
 .mt-44 {
   margin-top: 4.4rem !important;
 }
-
 .mt-md {
   margin-top: 4.8rem !important;
 }
@@ -209,14 +191,11 @@ a {
   text-decoration: none;
   color: var(--color-gray--main);
 }
-/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
-
-/*  FLEX*/
 .flex {
   display: flex;
 }
@@ -253,7 +232,6 @@ a {
 .gap-2 {
   gap: 2rem;
 }
-/* BUTTON */
 .btn {
   display: inline-block;
   padding: 1rem 1.6rem;
@@ -275,14 +253,11 @@ a {
   background-color: var(--color-gray--light);
   color: var(--color-gray--main);
 }
-
-/* CARD */
 .card {
-  box-shadow: 0 0 0 1.2px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1.2px rgb(255 255 255 / 0.1);
   border-radius: 16px;
   padding: 2.4rem;
 }
-
 .icon-box {
   width: 6.4rem;
   height: 6.4rem;
@@ -295,24 +270,23 @@ a {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   background-color: var(--color-dark--main);
-  box-shadow: 0 0 0 1.2px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 1.2px rgb(255 255 255 / 0.1);
 }
 .box {
-  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-right: 1px solid rgb(255 255 255 / 0.1) !important;
 }
 .box-right {
-  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-right: 1px solid rgb(255 255 255 / 0.1) !important;
 }
 .box-left {
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgb(255 255 255 / 0.1);
 }
 .box-bottom {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 1px solid rgb(255 255 255 / 0.1) !important;
 }
 .box-top {
-  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-top: 1px solid rgb(255 255 255 / 0.1) !important;
 }
-
 .logo {
   width: 3.2rem;
   height: 3.2rem;
@@ -321,12 +295,11 @@ img.logo:hover {
   cursor: pointer;
   filter: brightness(1.2);
 }
-
 .glassy {
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255 255 255 / 0.1);
+  border: 1px solid rgb(255 255 255 / 0.3);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.1);
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -334,15 +307,13 @@ img.logo:hover {
   -o-border-radius: 16px;
   padding: 0.4rem 0.8rem;
 }
-
 .buttons button {
-  background: transparent;
+  background: #fff0;
   border: none;
   cursor: pointer;
   font-size: 2rem;
   color: var(--color-gray--light);
 }
-
 .buttons button:hover {
   color: var(--color-gray--main);
 }

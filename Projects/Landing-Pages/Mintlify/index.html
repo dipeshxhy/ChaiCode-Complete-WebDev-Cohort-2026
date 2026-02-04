@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mintlify &mdash; The Intelligent Documentation Platform</title>
 
-    <link
-      rel="shortcut icon"
-      href="/assets/icon.jpeg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="/assets/icon.jpeg" type="image/x-icon" />
 
     <!-- INTER FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,9 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Min CSS -->
+    <link rel="stylesheet" href="/css/general.min.css" />
+    <link rel="stylesheet" href="/css/style.min.css" />
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="/css/general.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/style.css" /> -->
   </head>
   <body>
     <!--HEADER AND NAVIGATION -->
@@ -37,7 +36,7 @@
             </a>
           </div>
           <div>
-            <ul class="flex items-center justify-center gap-2">
+            <ul class="flex items-center justify-center gap-2 nav-list">
               <li><a href="#">Resources</a></li>
               <li><a href="#">Documentation</a></li>
               <li><a href="#">Customers</a></li>
@@ -52,7 +51,7 @@
         </div>
       </nav>
       <div class="flex items-center justify-center mt-44">
-        <div class="hero-banner flex gap-2 items-center">
+        <div class="hero-banner mt-2xl flex gap-2 items-center">
           <button>New</button>
           <p>Self-updating docs with ai suggestions</p>
           <svg
@@ -574,32 +573,53 @@
         </nav>
       </div>
       <div class="container p-2 box-left box-right box-bottom footer-bottom">
-       <div class="flex items-center gap-2">
-        <p>Backed by enterprise-grade security</p>
-       <div class="z-50 select-none"><svg width="93" height="93" viewBox="0 0 93 93" class="w-full h-full" style="transform:rotate(-20deg)"><defs><path id="circle-path" d="M 46.5 46.5 m -31.5 0 a 31.5 31.5 0 1 1 63 0 a 31.5 31.5 0 1 1 -63 0"></path></defs><text font-size="4" fill="#fff" class=""><textPath href="#circle-path" startOffset="0%">SOC for Service Organizations | Service Organization</textPath></text></svg></div>
-       </div>
+        <div class="flex items-center gap-2">
+          <p>Backed by enterprise-grade security</p>
+          <div class="z-50 select-none">
+            <svg
+              width="93"
+              height="93"
+              viewBox="0 0 93 93"
+              class="w-full h-full"
+              style="transform: rotate(-20deg)"
+            >
+              <defs>
+                <path
+                  id="circle-path"
+                  d="M 46.5 46.5 m -31.5 0 a 31.5 31.5 0 1 1 63 0 a 31.5 31.5 0 1 1 -63 0"
+                ></path>
+              </defs>
+              <text font-size="4" fill="#fff" class="">
+                <textPath href="#circle-path" startOffset="0%">
+                  SOC for Service Organizations | Service Organization
+                </textPath>
+              </text>
+            </svg>
+          </div>
+        </div>
+      </div>
 
-       <div class="container">
-        <div class="flex justify-between ">
+      <div class="container pb-2xl p-md box-left box-right box-bottom">
+        <div class="flex justify-between">
           <div class="glassy">
-            All systems normal
+            <a href="#" class="text-primary">All systems normal</a>
           </div>
           <div>
             <p class="text-gray">&copy; 2026 Mintlify, Inc.</p>
           </div>
           <div class="glassy buttons">
             <button class="">
-                      <span>🖥</span>
-                    </button>
-                    <button class="">
-                      <span>☉</span>
-                    </button>
-                    <button class="">
-                      <span>☾</span>
-                    </button>
+              <span>🖥</span>
+            </button>
+            <button class="">
+              <span>☉</span>
+            </button>
+            <button class="">
+              <span>☾</span>
+            </button>
           </div>
         </div>
-       </div>
+      </div>
     </footer>
   </body>
 </html>
