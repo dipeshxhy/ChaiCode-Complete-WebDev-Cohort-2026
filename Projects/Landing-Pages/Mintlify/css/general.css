@@ -48,6 +48,9 @@ body {
 .text-gray {
   color: var(--color-gray--light);
 }
+.btn-bg--gray {
+  background-color: var(--color-gray--light);
+}
 /* GRID */
 .grid {
   display: grid;
@@ -107,6 +110,9 @@ body {
 }
 .w-60 {
   width: 60%;
+}
+.w-48 {
+  width: 48%;
 }
 .w-80 {
   width: 80%;
@@ -258,4 +264,26 @@ a {
   box-shadow: 0 0 0 1.2px rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 2.4rem;
+}
+
+.icon-box {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: var(--color-dark--main);
+  box-shadow: 0 0 0 1.2px rgba(255, 255, 255, 0.1);
+}
+.box {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.logo {
+  width: 3.2rem;
+  height: 3.2rem;
 }
