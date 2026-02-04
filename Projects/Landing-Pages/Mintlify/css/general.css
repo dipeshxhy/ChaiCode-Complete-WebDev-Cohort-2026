@@ -51,6 +51,27 @@ body {
 .btn-bg--gray {
   background-color: var(--color-gray--light) !important;
 }
+/* Target all scrollbars */
+::-webkit-scrollbar {
+  width: 1rem; /* Width of the vertical scrollbar */
+}
+
+/* Style the track */
+::-webkit-scrollbar-track {
+  background: var(--color-dark--main);
+  border-radius: 10px;
+}
+
+/* Style the thumb (handle) */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary); /* Gray thumb */
+  border-radius: 10px;
+}
+
+/* Add a hover effect to the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary--light);
+}
 /* GRID */
 .grid {
   display: grid;
