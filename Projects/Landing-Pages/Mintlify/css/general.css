@@ -53,19 +53,27 @@ body {
 }
 /* Target all scrollbars */
 ::-webkit-scrollbar {
-  width: 1rem; /* Width of the vertical scrollbar */
+  width: 8px; /* Width of the vertical scrollbar */
 }
 
 /* Style the track */
 ::-webkit-scrollbar-track {
   background: var(--color-dark--main);
-  border-radius: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 /* Style the thumb (handle) */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary); /* Gray thumb */
+  background: var(--color-primary);
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 /* Add a hover effect to the thumb */
