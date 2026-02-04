@@ -208,6 +208,22 @@
 .customer-card--logo svg.x {
   width: 10rem;
 }
+.customer-btn--left {
+  background-color: var(--color-gray--dark);
+  color: var(--color-white);
+}
+.customer-btn--right {
+  background-color: #dadada;
+  color: var(--color-dark--main);
+}
+.customer-btn--right:hover {
+  cursor: pointer;
+  background-color: var(--color-gray--light);
+}
+.customer-btn--left:hover {
+  cursor: pointer;
+  background-color: var(--color-gray--light);
+}
 
 /* SECTION CTA */
 .section-cta {
