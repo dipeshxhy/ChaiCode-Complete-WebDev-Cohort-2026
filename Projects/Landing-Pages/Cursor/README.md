@@ -32,24 +32,18 @@ This is assignment given by Sir at Cohort 2026 to practice HTML and CSS and Have
 }
 @font-face {
   font-family: 'cursorRegular';
-  src:
-    url(../fonts/f30fd2e485acf1bc-s.p.3d1b066d.woff2) format('woff2'),
-    url(../fonts/f30fd2e485acf1bc-s.p.3d1b066d.woff) format('woff');
+  src: url(../fonts/CursorGothic_Regular-s.p.a361088d.woff2) format('woff2');
 }
 @font-face {
   font-family: 'cursorBold';
-  src:
-    url(../fonts/CursorGothic_Bold-s.p.95169710.woff2) format('woff2'),
-    url(../fonts/CursorGothic_Bold-s.p.95169710.woff) format('woff');
+  src: url(../fonts/CursorGothic_Bold-s.p.95169710.woff2) format('woff2');
 }
 
 ```
 
-
-
 ## My Steps
 
-Our Hitesh Sir has tauught always look row wise , one component at one time . so There is no problem comes in building any website. so My first approach was
+Our Hitesh Sir has taught always look row wise , one component at one time . so There is no problem comes in building any website. so My first approach was
 
 1. **Build Navbar** : In this section , I use `nav` semantic tag and download all the assets from the real website from dev tool. so
 
@@ -72,8 +66,7 @@ In this way I build whole landing page . I have used Most semantic tags like nav
 
 - **--color-accent**
 - **--spacing-md**
-  
-so I got chance of learning and practicing most of CSS properties and I got more familiar in CSS Grid and FlexBox . Now I Can think and Build the Layout .
----
-Thank You For Reading it. 
 
+## so I got chance of learning and practicing most of CSS properties and I got more familiar in CSS Grid and FlexBox . Now I Can think and Build the Layout .
+
+Thank You For Reading it.

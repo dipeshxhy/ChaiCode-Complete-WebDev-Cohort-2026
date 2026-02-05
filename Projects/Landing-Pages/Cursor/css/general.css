@@ -18,15 +18,11 @@
 }
 @font-face {
   font-family: 'cursorRegular';
-  src:
-    url(../fonts/f30fd2e485acf1bc-s.p.3d1b066d.woff2) format('woff2'),
-    url(../fonts/f30fd2e485acf1bc-s.p.3d1b066d.woff) format('woff');
+  src: url(../fonts/CursorGothic_Regular-s.p.a361088d.woff2) format('woff2');
 }
 @font-face {
   font-family: 'cursorBold';
-  src:
-    url(../fonts/CursorGothic_Bold-s.p.95169710.woff2) format('woff2'),
-    url(../fonts/CursorGothic_Bold-s.p.95169710.woff) format('woff');
+  src: url(../fonts/CursorGothic_Bold-s.p.95169710.woff2) format('woff2');
 }
 
 * {
