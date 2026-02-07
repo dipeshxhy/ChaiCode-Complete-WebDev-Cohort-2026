@@ -2,7 +2,7 @@
 
 ## Screenshot of my build webpage
 
-![Screenshot](/assets/SC.png)
+![Screenshot](./assets/SC.png)
 
 ## Live demo
 
@@ -52,3 +52,4 @@ In this way all section is created and last footer part is very easy just make t
 ---
 
 #### Thank you for reading. I hope you liked it and I did good job.
+
