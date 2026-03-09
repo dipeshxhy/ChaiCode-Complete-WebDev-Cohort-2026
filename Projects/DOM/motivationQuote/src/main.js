@@ -28,8 +28,6 @@ const stored = JSON.parse(localStorage.getItem('dailyImage'));
     });
 })();
 
-
-
 function clock() {
   const formatted = new Intl.DateTimeFormat('en-US', {
     weekday: 'long',
@@ -46,8 +44,6 @@ function clock() {
 
 setInterval(clock, 1000);
 clock();
-
-
 
 if (!stored || stored.date !== today) {
   fetch(
@@ -71,3 +67,56 @@ if (!stored || stored.date !== today) {
   background.style.backgroundSize = 'cover';
   background.style.backgroundPosition = 'center';
 }
+
+// heroscope
+const formZodiac = document.querySelector('.form-zodiac');
+const inputZodiac = document.getElementById('zodiacInput');
+const zodiacContainer = document.getElementById('zodiacContainer');
+const storedZodiac = JSON.parse(localStorage.getItem('zodiac'));
+
+async function getZodiac(search) {
+  if (!storedZodiac || !storedZodiac[search]) {
+    try {
+      const res = await fetch(
+        `https://api.api-ninjas.com/v1/horoscope?zodiac=${search}`,
+        {
+          method: 'GET',
+          headers: {
+            'X-Api-Key': api_key,
+          },
+        }
+      );
+      const data = await res.json();
+      localStorage.setItem('zodiac', JSON.stringify({ ...data }));
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  } else {
+    return storedZodiac[search];
+  }
+}
+
+const searchZodiacs =
+  'aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces'.split(
+    ', '
+  );
+console.log(searchZodiacs);
+
+formZodiac.addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const value = inputZodiac.value.trim().toLowerCase();
+
+  if (!value || !searchZodiacs.includes(value)) {
+    alert(`used one of this ${searchZodiacs}`);
+    return;
+  }
+
+  const data = await getZodiac(value);
+
+  console.log(data);
+  zodiacContainer.innerHTML = `
+<span>${data.sign}</span>
+<p>${data.horoscope}</p>
+`;
+});

@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daily Motivation </title>
+  <link rel="shortcut icon" href="vite.svg" type="image/x-icon">
   <link href="/src/style.css" rel="stylesheet">
 
 </head>
-<body class="bg-black text-white  min-h-screen relative">
-    <div class="bg-image h-screen w-screen absolute top-0 left-0 z-[-1] bg-cover bg-linear-to-b from-stone-900/70 to-stone-900/20"></div>
+<body class="bg-black text-white   min-h-screen relative">
+    <div class="bg-image min-h-screen w-screen absolute top-0 left-0 z-[-1] bg-cover bg-linear-to-b from-stone-900/70 to-stone-900/20"></div>
     <div class="absolute inset-0 bg-black/40"></div>
   <header>
   <h1 class="text-4xl font-bold text-center pt-8 mb-4 text-orange-600">Daily Motivation</h1>
@@ -21,8 +22,18 @@
   
   <div class="flex justify-center items-center">
   <div id="card" class="max-w-md bg-linear-to-br from-orange-400 to-pink-500 p-8 rounded-md shadow-md "></div>
-  <div id="card2" class="max-w-md bg-linear-to-br from-orange-400 to-pink-500 p-8 rounded-md shadow-md "></div>
   </div>
+
+  <!-- search for zodiac -->
+   <div class=" w-full h-full flex justify-center items-center mt-6 flex-col relative"> 
+    <form class="form-zodiac z-10 mb-4 ">
+      <input type="text" id="zodiacInput" placeholder="Enter your zodiac..." class="p-4 border outline-none  ">
+      <button class="p-4 rounded hover:bg-hover-600 bg-blue-500 cursor-pointer" type="submit">Search it</button>
+    </form>
+    <div id="zodiacContainer" class="max-w-md w-[600px] bg-purple-500 rounded p-4"> 
+      <p>Get your Hersocope..</p>
+    </div>
+   </div>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
